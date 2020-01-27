@@ -32,7 +32,7 @@ When you believe your YIP is mature and ready to progress past the draft phase, 
 
 # Preferred Citation Format
 
-The canonical URL for a YIP that has achieved draft status at any point is at https://github/Stakedllc/YIPS/YIPS. For example, the canonical URL for YIP-1 is https://github/Stakedllc/YIPS/YIPS/yip-1,md.
+The canonical URL for a YIP that has achieved draft status at any point is at https://github.com/Stakedllc/YIPs/tree/master/YIPS. For example, the canonical URL for YIP-1 is https://github.com/Stakedllc/YIPs/blob/master/YIPS/yip-1.md.
 
 # Automerger
 
