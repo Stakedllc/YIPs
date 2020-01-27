@@ -2,18 +2,12 @@
 yip: 2
 title: Uniswap ETH/WETH Opportunity
 author: Devan Purhar <@dpurhar27>, Sam Mitchell <@samatstaked>
-discussions-to: n/a
+discussions-to: https://github.com/Stakedllc/YIPs/issues/5
 status: WIP
 created: 2020-01-27
 ---
 
 <!--You can leave these HTML comments in your merged YIP and delete the visible duplicate text guides, they will not appear and may be helpful to refer to if you edit it again. This is the suggested template for new YIPs. Note that an YIP number will be assigned by an editor. When opening a pull request to submit your YIP, please use an abbreviated title in the filename, `yip-draft_title_abbrev.md`. The title should be 44 characters or less.-->
-This is the suggested template for new YIPs.
-
-Note that an YIP number will be assigned by an editor. When opening a pull request to submit your YIP, please use an abbreviated title in the filename, `yip-draft_title_abbrev.md`.
-
-The title should be 44 characters or less.
-
 ## Simple Summary
 <!--"If you can't explain it simply, you don't understand it well enough." Provide a simplified and layman-accessible explanation of the YIP.-->
 Add a new Opportunity for the ETH portfolios - the Uniswap ETH/WETH liquidity pool.
