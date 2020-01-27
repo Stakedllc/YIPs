@@ -12,7 +12,7 @@ updated: n/a
 
 YIP stands for Yield Improvement Proposal. An YIP is a design document providing information to the Robo-Advisor for Yield (RAY) community, or describing a new feature for RAY or its processes or environment. The purpose of this process is to ensure changes to RAY are transparent and open to contribution from the community. The YIP should provide a concise technical specification of the feature and a rationale for the feature. The YIP author is responsible for building consensus within the community and documenting dissenting opinions.
 
-This has been adapted from the EIP (Ethereum Improvement Proposal) and the YIP (Synthetix Improvement Proposal).
+This has been adapted from the EIP (Ethereum Improvement Proposal) and the SIP (Synthetix Improvement Proposal).
 
 ## YIP Rationale
 
@@ -146,13 +146,7 @@ The current YIP editors are
 
 ` * Seth Riney (@sriney-staked)`
 
-` * Jonathan Marcus (@jonathanmarcus)`
-
 ` * Devan Purhar (@dpurhar27)`
-
-` * Cole Kennelly (@colekennelly1)`
-
-` * Tucker Chapin (@tuckerchapin)`
 
 ## YIP Editor Responsibilities
 
@@ -182,13 +176,12 @@ The YIP document was derived heavily from the EIP (Ethereum Improvement Proposal
 
 The history of the EIP is quoted below from the EIP document for context:
 
-* *"This document (EIP) was derived heavily from [Bitcoin's BIP-0001] written by Amir Taaki which in turn was derived from [Python's PEP-0001]. In many places text was simply copied and modified. Although the PEP-0001 text was written by Barry Warsaw, Jeremy Hylton, and David Goodger, they are not responsible for its use..."* *
+*"This document (EIP) was derived heavily from [Bitcoin's BIP-0001] written by Amir Taaki which in turn was derived from [Python's PEP-0001]. In many places text was simply copied and modified. Although the PEP-0001 text was written by Barry Warsaw, Jeremy Hylton, and David Goodger, they are not responsible for its use..."*
 
 The history of the SIP is quoted below from the SIP document for context:
 
-* *"The SIP document was derived heavily from the EIP Ethereum Improvement Proposal document in many places text was simply copied and modified. Any comments about the SIP document should be directed to the SIP editors. The history of the EIP is quoted below from the EIP document  for context:
-
-This document (EIP) was derived heavily from [Bitcoin's BIP-0001] written by Amir Taaki which in turn was derived from [Python's PEP-0001]. In many places text was simply copied and modified. Although the PEP-0001 text was written by Barry Warsaw, Jeremy Hylton, and David Goodger, they are not responsible for its use..."* *
+*"The SIP document was derived heavily from the EIP Ethereum Improvement Proposal document in many places text was simply copied and modified. Any comments about the SIP document should be directed to the SIP editors. The history of the EIP is quoted below from the EIP document  for context:
+This document (EIP) was derived heavily from [Bitcoin's BIP-0001] written by Amir Taaki which in turn was derived from [Python's PEP-0001]. In many places text was simply copied and modified. Although the PEP-0001 text was written by Barry Warsaw, Jeremy Hylton, and David Goodger, they are not responsible for its use..."*
 
 
 January 24, 2020: YIP 1 has been drafted and will be submitted as a PR.
@@ -201,7 +194,7 @@ See [the revision history for further details](https://github.com/Stakedllc/YIPs
 [RAY Discord]: https://discord.gg/P2qgbEY
 [pull request]: https://github.com/Stakedllc/YIPs/pulls
 [markdown]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-[Synthetix's EIP-1]: https://github.com/Synthetixio/SIPs
+[Synthetix's SIP-1]: https://github.com/Synthetixio/SIPs
 [Ethereum's EIP-1]: https://github.com/ethereum/EIPs
 [Bitcoin's BIP-0001]: https://github.com/bitcoin/bips
 [Python's PEP-0001]: https://www.python.org/dev/peps
