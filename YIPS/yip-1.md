@@ -3,9 +3,8 @@ yip: 1
 title: YIP Purpose and Guidelines
 status: WIP
 author: Devan Purhar <devan@staked.us>
-        https://github.com/Stakedllc/YIPs/blob/master/YIPS/yip-1.md
 created: 2020-01-24
-updated: n/a
+updated: 2020-01-27
 ---
 
 ## What is an YIP?
@@ -51,13 +50,15 @@ Each YIP should have the following parts:
 
 - Preamble - RFC 822 style headers containing metadata about the YIP, including the YIP number, a short descriptive title (limited to a maximum of 44 characters), and the author details.
 - Abstract - A short (~200 word) description of the issue being addressed in layman terms.
-- Motivation (*optional) - The motivation is critical for YIPs that want to change RAY. It should clearly explain why the existing specification is inadequate to address the problem that the YIP solves. YIP submissions without sufficient motivation may be rejected outright.
+- Motivation (*optional*) - The motivation is critical for YIPs that want to change RAY. It should clearly explain why the existing specification is inadequate to address the problem that the YIP solves. YIP submissions without sufficient motivation may be rejected outright.
+- Yield Evaluation - The potential added value for extra yield generation. Historical data should be provided. The process used to evaluate the yield potential should be detailed here.
+- Risk Evaluation - The potential or attached risk that should be considered for this proposal. Historical data should be provided. The process used to evaluate the risks should be detailed here.
 - Specification - The technical specification should describe the syntax and semantics of any new feature.
 - Rationale - The rationale fleshes out the specification by describing what motivated the design and why particular design decisions were made. It should describe alternate designs that were considered and related work, e.g. how the feature is supported in other languages. The rationale may also provide evidence of consensus within the community, and should discuss important objections or concerns raised during discussion.
 - Backwards Compatibility - All YIPs that introduce backwards incompatibilities must include a section describing these incompatibilities and their severity. The YIP must explain how the author proposes to deal with these incompatibilities. YIP submissions without a sufficient backwards compatibility treatise may be rejected outright.
-- Test Cases - Test cases may be added during the implementation phase but are required before implementation.
+- Test Cases - (*optional*) Test cases may be added during the implementation phase but are required before implementation.
 - Implementations - The implementations must be completed before any YIP is given status “Final”, but it need not be completed before the YIP is merged as draft. While there is merit to the approach of reaching consensus on the specification and rationale before writing code, the principle of “rough consensus and running code” is still useful when it comes to resolving many discussions of API details.
-- Security Considerations - All YIPs must contain a section that discusses the security implications/considerations relevant to the proposed change. Include information that might be important for security discussions, surfaces risks and can be used throughout the life cycle of the proposal. E.g. include security-relevant design decisions, concerns, important discussions, implementation-specific guidance and pitfalls, an outline of threats and risks and how they are being addressed. YIP submissions missing the "Security Considerations" section will be rejected. An YIP cannot proceed to status "Final" without a Security Considerations discussion deemed sufficient by the reviewers.
+- Security Considerations - (*optional*) YIPs may contain a section that discusses the security implications/considerations relevant to the proposed change. Include information that might be important for security discussions, surfaces risks and can be used throughout the life cycle of the proposal. E.g. include security-relevant design decisions, concerns, important discussions, implementation-specific guidance and pitfalls, an outline of threats and risks and how they are being addressed. 
 - Copyright Waiver - All YIPs must be in the public domain. See the bottom of this YIP for an example copyright waiver.
 
 ## YIP Formats and Templates
