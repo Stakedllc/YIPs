@@ -1,7 +1,7 @@
 ---
 name: Submit a YIP
 about: Submit a Robo-Advisor for Yield Improvement Proposal
-title: 'YIP-[Title the RAY Improvement Proposal]'
+title: YIP-[Title the RAY Improvement Proposal]
 labels: ''
 assignees: ''
 
