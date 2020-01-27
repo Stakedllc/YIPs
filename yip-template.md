@@ -34,6 +34,7 @@ The potential added value for extra yield generation. Historical data should be 
 
 ## Risk Evaluation
 <!--The potential or attached risk that should be considered for this proposal. Historical data should be provided. The process used to evaluate the risks should be detailed here.-->
+The potential or attached risk that should be considered for this proposal. Historical data should be provided. The process used to evaluate the risks should be detailed here.
 
 ## Specification
 <!--The technical specification should describe the syntax and semantics of any new feature.-->
