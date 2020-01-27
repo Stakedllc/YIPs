@@ -1,7 +1,7 @@
 ---
 yip: 2
 title: Uniswap ETH/WETH Opportunity
-author: Devan Purhar <@dpurhar27>, Sam Mitchell <@samatstaked>
+author: Devan Purhar @dpurhar27, Sam Mitchell @samatstaked
 discussions-to: https://github.com/Stakedllc/YIPs/issues/5
 status: WIP
 created: 2020-01-27
