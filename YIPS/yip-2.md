@@ -5,6 +5,7 @@ author: Devan Purhar @dpurhar27, Sam Mitchell @samatstaked
 discussions-to: https://github.com/Stakedllc/YIPs/issues/5
 status: WIP
 created: 2020-01-27
+updated: 2020-01-28
 ---
 
 <!--You can leave these HTML comments in your merged YIP and delete the visible duplicate text guides, they will not appear and may be helpful to refer to if you edit it again. This is the suggested template for new YIPs. Note that an YIP number will be assigned by an editor. When opening a pull request to submit your YIP, please use an abbreviated title in the filename, `yip-draft_title_abbrev.md`. The title should be 44 characters or less.-->
@@ -19,6 +20,12 @@ RAY strives to earn the best passive yield possible on assets supported. Adding 
 ## Motivation
 <!--The motivation is critical for YIPs that want to change the RAY protocol. It should clearly explain why the existing protocol specification is inadequate to address the problem that the YIP solves. YIP submissions without sufficient motivation may be rejected outright.-->
 Adding this Opportunity will potentially boost ETH yields that RAY can generate, as well as generally give RAY more options to consider, while it fits the passive yield framework. 
+
+## Yield Evaluation
+<!--The potential added value for extra yield generation. Historical data should be provided. The process used to evaluate the yield potential should be detailed here.-->
+
+## Risk Evaluation
+<!--The potential or attached risk that should be considered for this proposal. Historical data should be provided. The process used to evaluate the risks should be detailed here.-->
 
 ## Specification
 <!--The technical specification should describe the syntax and semantics of any new feature.-->
