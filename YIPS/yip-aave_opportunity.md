@@ -34,7 +34,7 @@ function supply(address tokenAddress, uint amount, bool isERC20) external payabl
 - The implementation would be responsible for supplying the appropriate token to Aave's lending pool.
 
 function withdraw(address tokenAddress, address beneficiary, uint amount, bool isERC20) external;
--The implementation would be responsible for withdrawing the appropriate token from Aave's lending pool.
+- The implementation would be responsible for withdrawing the appropriate token from Aave's lending pool.
 
 function getBalance(address tokenAddress) external view returns (uint);
 - The implementation would be responsible for getting the total balance (principal + interest) for the supplied balance.
