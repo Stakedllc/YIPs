@@ -7,13 +7,6 @@ status: WIP
 created: 2020-02-03
 ---
 
-<!--You can leave these HTML comments in your merged YIP and delete the visible duplicate text guides, they will not appear and may be helpful to refer to if you edit it again. This is the suggested template for new YIPs. Note that an YIP number will be assigned by an editor. When opening a pull request to submit your YIP, please use an abbreviated title in the filename, `yip-draft_title_abbrev.md`. The title should be 44 characters or less.-->
-This is the suggested template for new YIPs.
-
-Note that an YIP number will be assigned by an editor. When opening a pull request to submit your YIP, please use an abbreviated title in the filename, `yip-draft_title_abbrev.md`.
-
-The title should be 44 characters or less.
-
 ## Simple Summary
 <!--"If you can't explain it simply, you don't understand it well enough." Provide a simplified and layman-accessible explanation of the YIP.-->
 Aave is newly released pooled lending protocol on Ethereum. It operates similarly to Compound, dYdX and bZx - users can supply funds to a pool and earn interest, and they can borrow off of posted collateral. 
