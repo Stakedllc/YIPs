@@ -1,6 +1,6 @@
 ---
-yip: <to be assigned>
-title: Aave Opportunity
+yip: 3
+title: Aave Lending Opportunity
 author: Sam Mitchell <sam@staked.us>
 discussions-to: https://discord.gg/w5Uub3
 status: WIP
