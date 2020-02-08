@@ -1,8 +1,7 @@
-
 ---
 yip: <to be assigned>
 title: DDEX Lending Opportunity
-author: Devan Purhar @dpurhar27, Sam Mitchell <sam@staked.us>
+author: Sam Mitchell @samatstaked, Devan Purhar @dpurhar27
 discussions-to: https://discord.gg/nvRCzYp
 status: WIP
 created: 2020-02-03
@@ -11,6 +10,7 @@ created: 2020-02-03
 ## Simple Summary
 <!--"If you can't explain it simply, you don't understand it well enough." Provide a simplified and layman-accessible explanation of the YIP.-->
 DDEX is a decentralized margin trading platform built on Ethereum that launched mid-August 2019. It operates similarly to Compound, dYdX and bZx - users can supply funds to a pool and earn interest, and they can borrow off of posted collateral. 
+
 ## Abstract
 <!--A short (~200 word) description of the technical issue being addressed.-->
 DDEX must be integrated as an opportunity before RAY can allocate funds. Technically, integrating DDEX will be very similar to the existing lending protocol opportunities in RAY.
