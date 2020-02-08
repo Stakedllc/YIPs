@@ -1,4 +1,4 @@
-	---
+---
 yip: <to be assigned>
 title: dYdX Liquidation Opportunity
 author: Sam Mitchell @samatstaked, Devan Purhar @dpurhar27
@@ -21,7 +21,7 @@ Liquidations offer a new source of return for RAY. Liquidations can be incredibl
 
 ## Yield Evaluation
 <!--The potential added value for extra yield generation. Historical data should be provided. The process used to evaluate the yield potential should be detailed here.-->
-The 5% premium is clearly a yield-boosting opportunity. Next step - identify historical data around size of opportunities to liquidate. Plus take into gas-wars.
+The 5% premium is clearly a yield-boosting opportunity. Next step - identify historical data around size of opportunities to liquidate. Plus take into account gas-wars.
 
 ## Risk Evaluation
 <!--The potential or attached risk that should be considered for this proposal. Historical data should be provided. The process used to evaluate the risks should be detailed here.-->
