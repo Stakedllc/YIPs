@@ -1,9 +1,9 @@
 
 ---
 yip: <to be assigned>
-title: Aave Opportunity
-author: Sam Mitchell <sam@staked.us>
-discussions-to: https://discord.gg/h9XHj9
+title: DDEX Lending Opportunity
+author: Devan Purhar @dpurhar27, Sam Mitchell <sam@staked.us>
+discussions-to: https://discord.gg/nvRCzYp
 status: WIP
 created: 2020-02-03
 ---
@@ -32,10 +32,10 @@ DDEX had a problem with their liquidation mechanism in Novemember of 2019. The E
 This additional Opportunity would follow the current standard 'Opportunity' interface.
 
 function supply(address tokenAddress, uint amount, bool isERC20) external payable;
-- The implementation would be responsible for supplying the appropriate token to Aave's lending pool.
+- The implementation would be responsible for supplying the appropriate token to DDEX's lending pool.
 
 function withdraw(address tokenAddress, address beneficiary, uint amount, bool isERC20) external;
-- The implementation would be responsible for withdrawing the appropriate token from Aave's lending pool.
+- The implementation would be responsible for withdrawing the appropriate token from DDEX's lending pool.
 
 function getBalance(address tokenAddress) external view returns (uint);
 - The implementation would be responsible for getting the total balance (principal + interest) for the supplied balance.
