@@ -9,7 +9,38 @@ created: 2020-02-07
 
 ## Simple Summary
 <!--"If you can't explain it simply, you don't understand it well enough." Provide a simplified and layman-accessible explanation of the YIP.-->
-dYdX is a decentralized margin trading platform built on Ethereum. When accounts on dYdX reach a certain collateralization threshold, liquidators can come in and repay the borrow in exchange for a 5% premium.
+dYdX is a decentralized margin trading platform built on Ethereum. When accounts on dYdX reach a certain collateralization threshold, liquidators can come in and repay the borrow in exchange for a 5% premium. 
+
+The following is a clear explanation of the liquidation process from [dYdX](https://github.com/dydxprotocol/liquidator):
+
+Liquidations on Solo reward a 5% spread on top of the current oracle prices for the assets being liquidated and used as collateral. Example:
+
+Undercollateralized Account:
+
++2 ETH
+-350 DAI
+
+Liquidator Account:
+
++100 ETH
+-1000 DAI
+
+Oracle Prices:
+
+ETH Oracle Price: $200
+DAI Oracle Price: $1
+
+Fully liquidating this account would cause 350 DAI to be paid to zero out its balance, and would reward 350 DAI * ($1/DAI / $200/ETH) * 1.05 = 1.8375 ETH as payout. After the liquidation the account balances would be:
+
+Undercollateralized Account:
+
++0.1625 ETH
+0 DAI
+
+Liquidator Account:
+
++101.8375 ETH
+-1350 DAI
 
 ## Abstract
 <!--A short (~200 word) description of the technical issue being addressed.-->
@@ -21,7 +52,7 @@ Liquidations offer a new source of return for RAY. Liquidations can be incredibl
 
 ## Yield Evaluation
 <!--The potential added value for extra yield generation. Historical data should be provided. The process used to evaluate the yield potential should be detailed here.-->
-The 5% premium is clearly a yield-boosting opportunity. Next step - identify historical data around size of opportunities to liquidate. Plus take into account gas-wars.
+The 5% premium is clearly a yield-boosting opportunity. [Historical data](https://docs.google.com/spreadsheets/d/1B13YheapGlqJ4ij1030kdQ2MfA4iy9d41PoLP1Q_OQU/edit?usp=sharing) previously pulled by [Devan](@dpurhar27). More to-do here.
 
 ## Risk Evaluation
 <!--The potential or attached risk that should be considered for this proposal. Historical data should be provided. The process used to evaluate the risks should be detailed here.-->
