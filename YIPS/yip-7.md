@@ -1,5 +1,5 @@
 ---
-yip: <to be assigned>
+yip: 7
 title: bZx Bounty Hunter Opportunity
 author: Sam Mitchell @samatstaked
 discussions-to: https://discord.gg/nvRCzYp
