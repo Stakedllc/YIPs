@@ -1,5 +1,5 @@
 ---
-yip: <to be assigned>
+yip: 10
 title: SAI DAI Price Opportunity
 author: Sam Mitchell @samatstaked
 discussions-to: https://discord.gg/nvRCzYp
