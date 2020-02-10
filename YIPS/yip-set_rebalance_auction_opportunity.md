@@ -11,7 +11,7 @@ created: 2020-02-09
 <!--"If you can't explain it simply, you don't understand it well enough." Provide a simplified and layman-accessible explanation of the YIP.-->
 Set is a protocol on Ethereum that allows anyone to create a tradable basket of assets. Set protocols have predefined rules that require the composition of assets within a basket to change if certain conditions are met. When the composition of assets must change, Set offers up the tokens in the basket to be exchanged for the desired tokens in a dutch auction. 
 
-According to the Set team ([article](https://medium.com/set-protocol/introducing-the-rebalancing-dashboard-9130e31435d9)), 'the auction differs from traditional dutch auctions in that bids atomically, meaning that bidders receive the outflows tokens in the same transaction as the injection of the inflows. Funds are never locked in the contract.'.
+According to the Set team ([article](https://medium.com/set-protocol/introducing-the-rebalancing-dashboard-9130e31435d9)), 'the auction differs from traditional dutch auctions in that bids settle immediately or atomically, meaning that bidders receive the outflows tokens in the same transaction as the injection of the inflows. Funds are never locked in the contract.'.
 
 Thus, if the oracle detects that RAY portfolios can benefit from a rebalance then RAY should participate in the Set rebalance to earn additional alpha.
 
