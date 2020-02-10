@@ -1,5 +1,5 @@
 ---
-yip: <to be assigned>
+yip: 11
 title: DDEX Lending Opportunity
 author: Sam Mitchell @samatstaked, Devan Purhar @dpurhar27
 discussions-to: https://discord.gg/nvRCzYp
