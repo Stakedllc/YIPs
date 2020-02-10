@@ -2,7 +2,7 @@
 yip: 3
 title: Aave Lending Opportunity
 author: Sam Mitchell <sam@staked.us>
-discussions-to: https://discord.gg/w5Uub3
+discussions-to: https://discord.gg/nvRCzYp
 status: WIP
 created: 2020-02-03
 ---
