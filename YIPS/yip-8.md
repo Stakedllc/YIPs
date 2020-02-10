@@ -1,5 +1,5 @@
 ---
-yip: <to be assigned>
+yip: 8
 title: DDEX Liquidation Opportunity
 author: Sam Mitchell @samatstaked
 discussions-to: https://discord.gg/nvRCzYp
