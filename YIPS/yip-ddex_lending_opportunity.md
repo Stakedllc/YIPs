@@ -9,7 +9,7 @@ created: 2020-02-03
 
 ## Simple Summary
 <!--"If you can't explain it simply, you don't understand it well enough." Provide a simplified and layman-accessible explanation of the YIP.-->
-DDEX is a decentralized margin trading platform built on Ethereum that launched mid-August 2019. It operates similarly to Compound, dYdX and bZx - users can supply funds to a pool and earn interest, and they can borrow off of posted collateral. 
+DDEX is a decentralized margin trading platform built on Ethereum that launched the current version of their protocol in October 2019. It operates similarly to Compound, dYdX and bZx - users can supply funds to a pool and earn interest, and they can borrow off of posted collateral. 
 
 ## Abstract
 <!--A short (~200 word) description of the technical issue being addressed.-->
@@ -25,7 +25,9 @@ DDEX offers an interest-earning opportunity on ETH, DAI, and USDC. DDEX lending 
 
 ## Risk Evaluation
 <!--The potential or attached risk that should be considered for this proposal. Historical data should be provided. The process used to evaluate the risks should be detailed here.-->
-DDEX had a problem with their liquidation mechanism in Novemember of 2019. The ETH price dropped quickly and borrowing positions became undercollateralized. DDEX offers high leverage to traders, 5x, so the risk of lending on DDEX is higher than other lending platforms with higher collateralization ratios.
+DDEX offers high leverage to traders, 5x, so the risk of lending on DDEX is higher than other lending platforms with higher collateralization ratios. At 5x, traders start at 125% collateralized, and are only available for liquidation once they reach lower than 110%. For comparison, dYdX begins liquidations at the 115% level.
+
+DDEX had a problem with their liquidation mechanism in Novemember of 2019. The ETH price dropped quickly and borrowing positions became undercollateralized. Need to investigate further here.
 
 ## Specification
 <!--The technical specification should describe the syntax and semantics of any new feature.-->
