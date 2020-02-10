@@ -1,5 +1,5 @@
 ---
-yip: <to be assigned>
+yip: 6
 title: Maker Collateral Auction Opportunity
 author: Sam Mitchell @samatstaked, Devan Purhar @dpurhar27
 discussions-to: https://discord.gg/nvRCzYp
