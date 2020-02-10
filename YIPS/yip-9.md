@@ -1,5 +1,5 @@
 ---
-yip: <to be assigned>
+yip: 9
 title: Set Rebalance Auction Opportunity
 author: Sam Mitchell @samatstaked, Devan Purhar @dpurhar27
 discussions-to: https://discord.gg/nvRCzYp
