@@ -2,7 +2,7 @@
 yip: <to be assigned>
 title: Curve Opportunity
 author: Devan Purhar @dpurhar27, Sam Mitchell @samatstaked
-discussions-to: https://discord.gg/nvRCzYp
+discussions-to: https://github.com/Stakedllc/YIPs/issues/26
 status: WIP
 created: 2020-02-12
 ---
