@@ -9,7 +9,8 @@ created: 2020-02-03
 
 ## Simple Summary
 <!--"If you can't explain it simply, you don't understand it well enough." Provide a simplified and layman-accessible explanation of the YIP.-->
-Aave is newly released pooled lending protocol on Ethereum. It operates similarly to Compound, dYdX and bZx - users can supply funds to a pool and earn interest, and they can borrow off of posted collateral. 
+Aave is a pooled lending protocol on Ethereum. Users can supply funds to a pool and earn interest, and they can borrow off of those supplied funds. Aave also allows for flash loans from their lending pools, and is governed by the LEND token.
+
 ## Abstract
 <!--A short (~200 word) description of the technical issue being addressed.-->
 Aave must be integrated as an opportunity before RAY can allocate funds.
@@ -24,7 +25,43 @@ Aave offers an interest-earning opportunity on ETH, DAI, and USDC. Aave also has
 
 ## Risk Evaluation
 <!--The potential or attached risk that should be considered for this proposal. Historical data should be provided. The process used to evaluate the risks should be detailed here.-->
-The largest risk in this opportunity is that Aave is a young platform. Aave has therefore not shown the resiliency in security and liquidations that other lending protocols have. Liquidity risks also exist.
+Launch of Platform: Jauary 8, 2020
+- - -
+Assets Supported: BAT, DAI, ETH, KNC, LEND, LINK, MANA, MKR, REP, TUSD, USDC, USDT, WBTC, ZRX, SUSD, and SNX
+- - - 
+Oracle Solution: Chainlink
+- - -
+- Resources
+  - [Aave Chainlink Blog Post](https://medium.com/aave/the-aave-oracle-network-powered-by-chainlink-is-now-live-45bb8a5a8c4e) 
+  - [Aave Chainlink Youtube Q&A](https://medium.com/aave/the-aave-oracle-network-powered-by-chainlink-is-now-live-45bb8a5a8c4e)
+- - -
+- Risk Summary
+  - To-do.
+- - -
+Audits: 
+- - -
+- Trail of Bits - Sep. 2019 - [Report](https://github.com/trailofbits/publications/blob/master/reviews/aaveprotocol.pdf)
+  - 4-Person Weeks
+- OpenZepplin - Jan. 2020 - [Report](https://blog.openzeppelin.com/aave-protocol-audit/)
+  - Pre-Production Code.
+-  Clement Lesaege from Kleros - On-Going
+
+Bug Bounty Program: Aave has a live bug bounty program that offers up to $25,000 for a critical bug. 
+
+- Reward Scheme
+  - Up to $25,000 for a critical bug
+  - Up to $10,000 for a very high-risk bug
+  - Up to $5,000 for a high-risk bug
+  - and continues declining the payout for less-critical bugs
+
+- Resources
+  - [Bug Bounty Information Page](https://aave.com/bug-bounty)
+- - -
+
+Security Reports:
+- - -
+- [Security Report #1](https://medium.com/aave/aave-security-report-d5a2edfe8e05) - Jan. 22, 2020
+- - -
 
 ## Specification
 <!--The technical specification should describe the syntax and semantics of any new feature.-->
