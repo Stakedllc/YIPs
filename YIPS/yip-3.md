@@ -30,22 +30,22 @@ Launch of Platform: Jauary 8, 2020
 Assets Supported: BAT, DAI, ETH, KNC, LEND, LINK, MANA, MKR, REP, TUSD, USDC, USDT, WBTC, ZRX, SUSD, and SNX
 - - - 
 Oracle Solution: Chainlink
-- - -
+
 - Resources
   - [Aave Chainlink Blog Post](https://medium.com/aave/the-aave-oracle-network-powered-by-chainlink-is-now-live-45bb8a5a8c4e) 
   - [Aave Chainlink Youtube Q&A](https://medium.com/aave/the-aave-oracle-network-powered-by-chainlink-is-now-live-45bb8a5a8c4e)
-- - -
+  
 - Risk Summary
   - To-do.
 - - -
-Audits: 
-- - -
+Audits:
+
 - Trail of Bits - Sep. 2019 - [Report](https://github.com/trailofbits/publications/blob/master/reviews/aaveprotocol.pdf)
   - 4-Person Weeks
 - OpenZepplin - Jan. 2020 - [Report](https://blog.openzeppelin.com/aave-protocol-audit/)
   - Pre-Production Code.
 -  Clement Lesaege from Kleros - On-Going
-
+- - -
 Bug Bounty Program: Aave has a live bug bounty program that offers up to $25,000 for a critical bug. 
 
 - Reward Scheme
@@ -59,7 +59,6 @@ Bug Bounty Program: Aave has a live bug bounty program that offers up to $25,000
 - - -
 
 Security Reports:
-- - -
 - [Security Report #1](https://medium.com/aave/aave-security-report-d5a2edfe8e05) - Jan. 22, 2020
 - - -
 
