@@ -26,18 +26,18 @@ Aave offers an interest-earning opportunity on ETH, DAI, and USDC. Aave also has
 ## Risk Evaluation
 <!--The potential or attached risk that should be considered for this proposal. Historical data should be provided. The process used to evaluate the risks should be detailed here.-->
 Launch of Platform: Jauary 8, 2020
-- - -
+
 Assets Supported: BAT, DAI, ETH, KNC, LEND, LINK, MANA, MKR, REP, TUSD, USDC, USDT, WBTC, ZRX, SUSD, and SNX
-- - - 
+
 Oracle Solution: Chainlink
 
+- Risk Summary
+  - To-do.
+  
 - Resources
   - [Aave Chainlink Blog Post](https://medium.com/aave/the-aave-oracle-network-powered-by-chainlink-is-now-live-45bb8a5a8c4e) 
   - [Aave Chainlink Youtube Q&A](https://medium.com/aave/the-aave-oracle-network-powered-by-chainlink-is-now-live-45bb8a5a8c4e)
-  
-- Risk Summary
-  - To-do.
-- - -
+
 Audits:
 
 - Trail of Bits - Sep. 2019 - [Report](https://github.com/trailofbits/publications/blob/master/reviews/aaveprotocol.pdf)
@@ -45,7 +45,7 @@ Audits:
 - OpenZepplin - Jan. 2020 - [Report](https://blog.openzeppelin.com/aave-protocol-audit/)
   - Pre-Production Code.
 -  Clement Lesaege from Kleros - On-Going
-- - -
+
 Bug Bounty Program: Aave has a live bug bounty program that offers up to $25,000 for a critical bug. 
 
 - Reward Scheme
@@ -56,11 +56,9 @@ Bug Bounty Program: Aave has a live bug bounty program that offers up to $25,000
 
 - Resources
   - [Bug Bounty Information Page](https://aave.com/bug-bounty)
-- - -
 
 Security Reports:
 - [Security Report #1](https://medium.com/aave/aave-security-report-d5a2edfe8e05) - Jan. 22, 2020
-- - -
 
 ## Specification
 <!--The technical specification should describe the syntax and semantics of any new feature.-->
