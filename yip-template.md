@@ -28,6 +28,14 @@ A short (~200 word) description of the technical issue being addressed.
 <!--The motivation is critical for YIPs that want to change the RAY protocol. It should clearly explain why the existing protocol specification is inadequate to address the problem that the YIP solves. YIP submissions without sufficient motivation may be rejected outright.-->
 The motivation is critical for YIPs that want to change the RAY protocol. It should clearly explain why the existing protocol specification is inadequate to address the problem that the YIP solves. YIP submissions without sufficient motivation may be rejected outright.
 
+## Yield Evaluation
+<!--The potential added value for extra yield generation. Historical data should be provided. The process used to evaluate the yield potential should be detailed here.-->
+The potential added value for extra yield generation. Historical data should be provided. The process used to evaluate the yield potential should be detailed here.
+
+## Risk Evaluation
+<!--The potential or attached risk that should be considered for this proposal. Historical data should be provided. The process used to evaluate the risks should be detailed here.-->
+The potential or attached risk that should be considered for this proposal. Historical data should be provided. The process used to evaluate the risks should be detailed here.
+
 ## Specification
 <!--The technical specification should describe the syntax and semantics of any new feature.-->
 The technical specification should describe the syntax and semantics of any new feature.

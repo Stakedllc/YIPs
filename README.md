@@ -19,7 +19,7 @@ Once your first PR is merged, we have a bot that helps out by automatically merg
 
 When you believe your YIP is mature and ready to progress past the draft phase, you should do one of two things:
 
- - **For a Standards Track YIP of type Proposed**, ask to have your issue added to [the agenda of an upcoming community meeting](https://github.com/Stakedllc/pm/issues), where it can be discussed for inclusion in a future release. If implementers agree to include it, the YIP editors will update the state of your YIP to 'Accepted'.
+ - **For a YIP of type Proposed**, ask to have your issue added to [the agenda of an upcoming community meeting](https://github.com/Stakedllc/YIPs/wiki/Community), where it can be discussed for inclusion in a future release. If implementers agree to include it, the YIP editors will update the state of your YIP to 'Accepted'.
  - **For all other YIPs**, open a PR changing the state of your YIP to 'Proposed'. An editor will review your draft and ask if anyone objects to it being accepted. If the editor decides there is no rough consensus - for instance, because contributors point out significant issues with the YIP - they may close the PR and request that you fix the issues in the draft before trying again.
 
 # YIP Status Terms
