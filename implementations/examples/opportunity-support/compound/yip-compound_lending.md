@@ -85,13 +85,18 @@ Backwards compatible.
 
 ## Test Cases
 <!--Test cases for an implementation are mandatory for YIPs that are affecting consensus changes. Other YIPs can choose to include links to test cases if applicable.-->
+**Off-chain implementation**
+1. `yarn`
+2. `truffle compile`
+3. `yarn run test` - note env. variables `WEB3_HTTP_PROVIDER` and `COIN` need to be supplied.
+
 To-do.
 
 ## Implementation
 <!--The implementations must be completed before any YIP is given status "Final", but it need not be completed before the YIP is accepted. While there is merit to the approach of reaching consensus on the specification and rationale before writing code, the principle of "rough consensus and running code" is still useful when it comes to resolving many discussions of API details.-->
 - Smart contracts implementation located at `./contracts`
 - Off-chain files implementation located at `./js`
-- Migration script located at `./migrations`
+- Migration script implementation located at `./migrations`
 - Dependency contract addresses located at `./other`
 
 ## Security Considerations
