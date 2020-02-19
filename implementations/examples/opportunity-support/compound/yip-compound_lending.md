@@ -31,18 +31,18 @@ Compound has been running without issue for over a year. They've performed sever
 <!--The technical specification should describe the syntax and semantics of any new feature.-->
 
 ### On-chain
-This Opportunity smart contract would follow the current standard 'Opportunity' interface.
+This Opportunity smart contract would follow the current standard `Opportunity.sol` interface.
 
 `function supply(address tokenAddress, uint amount, bool isERC20) external payable;`
-- The implementation would be responsible for supplying the appropriate token to Compound's lending pool in the amount specified.
+- The implementation would be responsible for supplying the appropriate token to Compound's lending pool in the amount specified instantly when being called.
 
 `function withdraw(address tokenAddress, address beneficiary, uint amount, bool isERC20) external;`
-- The implementation would be responsible for withdrawing the appropriate token from Compound's lending pool in the specified amount, and sending it to the specified beneficiary.
+- The implementation would be responsible for withdrawing the appropriate token from Compound's lending pool in the specified amount instantly when being called, and sending it to the specified beneficiary.
 
 `function getBalance(address tokenAddress) external view returns (uint);`
-- The implementation would be responsible for getting the total balance (principal + interest) for the supplied balance in Compound of the specified token.
+- The implementation would be responsible for getting the total balance (principal + interest) for the supplied amount in Compound of the specified token's native base units. Example: Lending ETH, return should be in units of wei.
 
-Additional smart contracts such as Compound-specific interfaces are open to be used to enable clean design.
+Additional smart contracts such as Compound-specific interfaces or third-party libraries such as OpenZeppelin can be used to enable clean design.
 
 ### Off-chain
 This Opportunity program would follow the current standard interface.
