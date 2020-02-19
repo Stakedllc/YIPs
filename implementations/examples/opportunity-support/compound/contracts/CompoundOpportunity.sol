@@ -63,20 +63,6 @@ contract CompoundOpportunity is Opportunity, MarketByContract {
   /*************** MODIFIER DECLARATIONS **************/
 
 
-  /// @notice  Checks the caller is RAY's Governance Wallet
-  ///
-  /// @dev     To be removed once fallbacks are
-  modifier onlyGovernance()
-  {
-      require(
-          msg.sender == _storage.getGovernanceWallet(),
-          "#CompoundImpl onlyGovernance Modifier: Only Governance can call this"
-      );
-
-      _;
-  }
-
-
   /// @notice  Checks the caller is RAY's Admin contract
   modifier onlyAdmin()
   {
@@ -299,33 +285,5 @@ contract CompoundOpportunity is Opportunity, MarketByContract {
 
   }
 
-
-  /** ------------------- FALLBACK FUNCTIONS ------------------- **/
-
-
-  /// @notice  Used to transfer funds to the Governance wallet in case of bug
-  function fallbackClaim(uint value, address principalToken, bool isERC20) external onlyGovernance {
-
-    if (isERC20) {
-
-      require(
-        IERC20(principalToken).transfer(_storage.getGovernanceWallet(), value),
-        "CompoundImpl fallbackClaim(): Transfer of ERC20 Token failed"
-      );
-
-    } else {
-
-      _storage.getGovernanceWallet().transfer(value);
-
-    }
-
-  }
-
-  /// @notice  Used to withdraw funds from the Opportunity in case of bug
-  function fallbackWithdrawCompound(uint amountToWithdraw, address principalToken) external onlyGovernance {
-
-     CompoundInterface(markets[principalToken]).redeemUnderlying(amountToWithdraw);
-
-  }
 
 }

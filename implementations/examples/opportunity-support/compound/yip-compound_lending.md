@@ -62,10 +62,13 @@ This Opportunity program would follow the current standard interface.
 `function modelRates(string supply);`
 - The implementation would be responsible for modeling how supplying _X_ of the specified token would affect the current rate. Return the new rate as a number.
 
-Note, the `modelRates()` off-chain spec. method signature is a bit flexible. Implementations should be specific to a coin.
+Note, the `modelRates()` off-chain spec. method signature is a bit flexible. This is the only function that doesn't need to be completed. Linking to sources that show/explain how the algorithm works is sufficient.
 
-### Submission Requirements
+Implementations should be specific to a coin. In example, if run with an environment variable specifying USDC, all data returned should be relevant to USDC only.
+
+### Submission Deliverables
 - Smart contract(s) that implements Compound integration following the specification, written in Solidity 0.4.25/0.5.11
+- Smart contract interface that is used in the off-chain files, written in Solidity 0.4.25/0.5.11
 - Off-chain file(s) that implements Compound integration following the specification, written in JS.
 - A migration script with the correct order of operations/correct parameters required to deploy the Compound Lending Opportunity contract
 - Dependency contract address(es) from the Compound system for Mainnet and if possible, Kovan testnet
