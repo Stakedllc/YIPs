@@ -61,6 +61,20 @@ Bug Bounty Program: Aave has a live bug bounty program that offers up to $25,000
 Security Reports:
 - [Security Report #1](https://medium.com/aave/aave-security-report-d5a2edfe8e05) - Jan. 22, 2020
 
+Governence Sysmtem: Aave is governed by the Aave team who hold special priveleges within the protocol smart contracts. They are in the middle of transitioning governence to a DAO with voting rights delegated to holders of the LEND token. Details on the new system are sparse, but will hopefully come out soon.
+
+Fees: Aave takes a loan origination fee on all loans. The fee is currently set to 0.25%. Aave also takes a fee of 0.09% on flash loans. These parameters are subject to change by governence.
+
+Financial Risk Considerations:
+
+- Liquidity Risk: Defined as the ability to pull invested money out of the protocol in a timely fashion. As x, the amount of tokens supplied by RAY, increases, liquidity risk should also increase. This can be properly monitored by looking at available liquidity in the pools. 
+
+- Liquidation Risk: Defined as the ability of liquidators to timely meet the needs of the pool such that all collateral under the collateralization requirement parameter is liquidated before it reaches an undercollateralized state.
+
+  - Liquidation risk is further amplified when an asset has low liquidity. Such consideration for death-spiral risk must be taken into account.
+  
+  - In the case in which a lending protocol becomes undercollateralized, what is the mechanism from which suppliers will be repaid? Are losses socialized? Or do losses only accrue to the last suppliers to pull out funds, hence incentivizing a bank run when liquidation occurs? Can RAY mitigate these risks?
+
 ## Specification
 
 The implementation of each function's signature and responsibilities are defined below:
