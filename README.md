@@ -6,6 +6,8 @@ A browsable version of all current and draft YIPs can be found on [here](https:/
 
 # Contributing
 
+## Creating a YIP
+
  1. Review [YIP-1](YIPS/yip-1.md).
  2. Fork the repository by clicking "Fork" in the top right.
  3. Add your YIP to your fork of the repository. There is a [template YIP here](yip-template.md).
@@ -21,6 +23,12 @@ When you believe your YIP is mature and ready to progress past the draft phase, 
 
  - **For a YIP of type Proposed**, ask to have your issue added to [the agenda of an upcoming community meeting](https://github.com/Stakedllc/YIPs/wiki/Community), where it can be discussed for inclusion in a future release. If implementers agree to include it, the YIP editors will update the state of your YIP to 'Accepted'.
  - **For all other YIPs**, open a PR changing the state of your YIP to 'Proposed'. An editor will review your draft and ask if anyone objects to it being accepted. If the editor decides there is no rough consensus - for instance, because contributors point out significant issues with the YIP - they may close the PR and request that you fix the issues in the draft before trying again.
+
+## Implementing a YIP
+1. Review [this example YIP implemenation](https://github.com/Stakedllc/YIPs/tree/master/implementations/examples/opportunity-support/compound).
+2. Fork the repository by clicking "Fork" in the top right.
+3. Add your YIP implementation to your fork of the repository at the path `./implementations/opportunity-support/name_of_yip/`
+4. Submit a Pull Request to RAY's [YIPs repository](https://github.com/Stakedllc/YIPs).
 
 # YIP Status Terms
 
