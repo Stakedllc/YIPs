@@ -6,8 +6,8 @@
   "repository": "",
   "author": "RAY",
   "scripts": {
-    "test": "yarn run babel && node dist/index.js",
-    "babel": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./test,./transpiled,./.babelrc,./package.json --copy-files"
+    "integration": "yarn run babel && node dist/index.js",
+    "babel": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./test,./.babelrc,./package.json --copy-files"
   },
   "dependencies": {
     "bignumber.js": "4.1.0",

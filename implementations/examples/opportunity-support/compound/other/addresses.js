@@ -9,6 +9,10 @@
 *
 *  - interestRateModel: Compound models their borrowing algorithm in this contract.
 *                       RAY needs to interact with this contract to model the rates.
+*
+* @sources
+*
+*   - https://compound.finance/developers
 */
 
 
