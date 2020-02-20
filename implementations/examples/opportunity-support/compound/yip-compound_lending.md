@@ -30,47 +30,57 @@ Compound has been running without issue for over a year. They've performed sever
 ## Specification
 <!--The technical specification should describe the syntax and semantics of any new feature.-->
 
+The implementation of each function's signature and responsibilities are defined below:
+
 ### On-chain
-This Opportunity smart contract would follow the current standard 'Opportunity' interface.
+This Opportunity smart contract would follow the current standard `Opportunity.sol` interface.
 
 `function supply(address tokenAddress, uint amount, bool isERC20) external payable;`
-- The implementation would be responsible for supplying the appropriate token to Compound's lending pool in the amount specified.
+- Responsible for supplying the appropriate token to Compound's lending pool in the amount specified instantly when being called.
 
 `function withdraw(address tokenAddress, address beneficiary, uint amount, bool isERC20) external;`
-- The implementation would be responsible for withdrawing the appropriate token from Compound's lending pool in the specified amount, and sending it to the specified beneficiary.
+- Responsible for withdrawing the appropriate token from Compound's lending pool in the specified amount instantly when being called, and sending it to the specified beneficiary.
 
 `function getBalance(address tokenAddress) external view returns (uint);`
-- The implementation would be responsible for getting the total balance (principal + interest) for the supplied balance in Compound of the specified token.
+- Responsible for getting the total balance (principal + interest) for the supplied amount in Compound of the specified token's native base units. Example: Lending ETH, return should be in units of wei.
 
-Additional smart contracts such as Compound-specific interfaces are open to be used to enable clean design.
+Additional smart contracts such as Compound-specific interfaces or third-party libraries such as OpenZeppelin can be used to enable clean design.
 
 ### Off-chain
 This Opportunity program would follow the current standard interface.
 
 `function getSupply();`
-- The implementation would be responsible for getting the total supply (amount supplied) for the specified token. Return the supply as a string.
+- Responsible for getting the total supply (amount supplied) for the specified token. Return the supply as a string.
 
 `function getDemand();`
-- The implementation would be responsible for getting the total demand (amount borrowed) for the specified token. Return the demand as a string.
+- Responsible for getting the total demand (amount borrowed) for the specified token. Return the demand as a string.
 
 `function getLiquidity();`
-- The implementation would be responsible for getting the total available market liquidity for the specified token. Return the liquidity as a string.
+- Responsible for getting the total available market liquidity for the specified token. Return the liquidity as a string.
 
 `function getRate();`
-- The implementation would be responsible for getting the supply rate (APR) net fees for the specified token. Return the supply rate as a number.
+- Responsible for getting the supply rate (APR) net fees for the specified token. Return the supply rate as a number.
 
 `function modelRates(string supply);`
-- The implementation would be responsible for modeling how supplying _X_ of the specified token would affect the current rate. Return the new rate as a number.
+- Responsible for modeling how supplying _X_ of the specified token would affect the current rate. Return the new rate as a number.
 
-Note, the `modelRates()` off-chain spec. method signature is a bit flexible. Implementations should be specific to a coin.
+Note, the `modelRates()` off-chain spec. method signature is a bit flexible. This is the only function that doesn't need to be completed. Linking to sources that show/explain how the algorithm works is sufficient.
 
-### Submission Requirements
-- Smart contract(s) that implements Compound integration following the specification, written in Solidity 0.4.25/0.5.11
+Implementations should be specific to a coin. In example, if run with an environment variable specifying USDC, all data returned should be relevant to USDC only.
+
+### Submission Deliverables
+- Smart contract(s) that implements Compound integration following the specification, written in Solidity 0.4.25/0.5.11.
+- Smart contract interface that is used in the off-chain files, written in Solidity 0.4.25/0.5.11.
 - Off-chain file(s) that implements Compound integration following the specification, written in JS.
-- A migration script with the correct order of operations/correct parameters required to deploy the Compound Lending Opportunity contract
-- Dependency contract address(es) from the Compound system for Mainnet and if possible, Kovan testnet
+- A Truffle migration script with the correct order of operations/parameters required to deploy the Compound Lending Opportunity contract.
+- Dependency contract address(es) from the Compound system for Mainnet and if possible, Kovan testnet. If Kovan support is not available, reach out to team and discuss options.
+- Answers to [these questions](https://github.com/Stakedllc/YIPs/blob/master/implementations/examples/opportunity-support/compound/other/answers.md).
+- Add support to this opportunity for ETH, DAI, USDC and SAI.
 
-Each document should have sufficient explanation of the integration specifics, and how it maps to the required functionality.
+### Guidelines
+- [Building an Opportunity](https://staked.gitbook.io/staked/ray/contributing#building-an-opportunity)
+
+Each document should have sufficient explanation of the integration specifics, how it maps to the required functionality, and links to relevant sources for acceptance checks to use.
 
 ## Rationale
 <!--The rationale fleshes out the specification by describing what motivated the design and why particular design decisions were made. It should describe alternate designs that were considered and related work, e.g. how the feature is supported in other languages. The rationale may also provide evidence of consensus within the community, and should discuss important objections or concerns raised during discussion.-->
@@ -82,13 +92,31 @@ Backwards compatible.
 
 ## Test Cases
 <!--Test cases for an implementation are mandatory for YIPs that are affecting consensus changes. Other YIPs can choose to include links to test cases if applicable.-->
+A lot of the Acceptance Testing will be manual, and not automated. Any testing on integration to help verify correct implementations are welcome.
+
+**Off-chain implementation**
+- Run based on the following commands and configurations:
+1. `yarn`
+2. `truffle compile`
+3. `yarn run integration` - note env. variables `WEB3_HTTP_PROVIDER` and `COIN` need to be supplied. Valid values for `COIN` include: `ETH`, `DAI`, `USDC`, `SAI`
+- Manual
+
+**On-chain implementation**
+- Manual
+
+**Migration implementation**
+- Manual
+
+**Other**
+- Manual
+
 To-do.
 
 ## Implementation
 <!--The implementations must be completed before any YIP is given status "Final", but it need not be completed before the YIP is accepted. While there is merit to the approach of reaching consensus on the specification and rationale before writing code, the principle of "rough consensus and running code" is still useful when it comes to resolving many discussions of API details.-->
 - Smart contracts implementation located at `./contracts`
 - Off-chain files implementation located at `./js`
-- Migration script located at `./migrations`
+- Migration script implementation located at `./migrations`
 - Dependency contract addresses located at `./other`
 
 ## Security Considerations

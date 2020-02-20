@@ -1,8 +1,8 @@
 /**
 * @notice  A Truffle-formatted migration to deploy the Compound Opportunity contract to
-*          Kovan/Mainnet, with coin configuration support for ETH, SAI, and USDC.
+*          Kovan/Mainnet, with coin configuration support for ETH, DAI, and USDC.
 *
-*          Compound has a different contract per market, hence the arrays matched for config.
+*          Compound has a different contract per market, hence the arrays matched for config. per coin.
 */
 
 
@@ -38,7 +38,7 @@ const MAIN_RAY_STORAGE_ADDRESS = '0x06a5Bf70BfF314177488864Fe03576ff608e6aec';
 
 // cTokens
 const MAIN_COMPOUND_ETH = '0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5';
-const MAIN_COMPOUND_DAI = '0xf5dce57282a584d2746faf1593d3121fcac444dc';
+const MAIN_COMPOUND_DAI = '0x5d3a536e4d6dbd6114cc1ead35777bab948e3643';
 const MAIN_COMPOUND_USDC = '0x39AA39c021dfbaE8faC545936693aC917d5E7563';
 
 

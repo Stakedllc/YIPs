@@ -1,7 +1,18 @@
 /**
 * @notice  These are the addresses of the external (from RAY) dependency contracts
 *
-*           In Compound's case, it's the cTokens and the interestRateModel contracts
+*  In Compound's case, it's the cTokens and the interestRateModel contracts
+*
+*  - cTokens: Compound represents each market (separated by asset) as a different
+*             smart contract. RAY needs to interact with each different contract
+*             to perform the required functionality. These are called cTokens.
+*
+*  - interestRateModel: Compound models their borrowing algorithm in this contract.
+*                       RAY needs to interact with this contract to model the rates.
+*
+* @sources
+*
+*   - https://compound.finance/developers
 */
 
 
@@ -16,7 +27,7 @@ const KOVAN_COMPOUND_USDC = '0xdff375162cfe7d77473c1bec4560dede974e138c';
 
 // cTokens
 const MAIN_COMPOUND_ETH = '0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5';
-const MAIN_COMPOUND_DAI = '0xf5dce57282a584d2746faf1593d3121fcac444dc';
+const MAIN_COMPOUND_DAI = '0x5d3a536e4d6dbd6114cc1ead35777bab948e3643';
 const MAIN_COMPOUND_USDC = '0x39AA39c021dfbaE8faC545936693aC917d5E7563';
 
 // interestRateModel

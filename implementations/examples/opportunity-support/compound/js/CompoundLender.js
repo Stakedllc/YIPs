@@ -51,18 +51,27 @@ class CompoundLender {
 
   async getRate() {
 
-    let supplyRate = this.cTokenContract.contract.methods.supplyRatePerBlock().call();
+    let supplyRate = await this.cTokenContract.contract.methods.supplyRatePerBlock().call();
     let interestRate = supplyRate / 1e18 * BLOCKS_PER_YEAR;
 
-    return interestRate.toString();
+    return interestRate;
 
   }
 
-  async modelRates(supply, demand) {
+
+  /**
+  * @notice  This function should have the most detail on how the platform in question
+  *          modeling of rates works. It's fine if implementation isn't completed, but
+  *          sources should be linked to where to find details on the algorithm used.
+  *
+  * @source  https://etherscan.io/address/0x0c3f8df27e1a00b47653fde878d68d35f00714c0#code
+  *          Relevant function is 'getBorrowRate()'. Model works off supply/demand.
+  */
+  async modelRates(supply) {
 
     // not actually implemented
 
-    let currentRate = await getRate();
+    let currentRate = await this.getRate();
     let newSupplyRate = currentRate * 0.95;
 
     return newSupplyRate;

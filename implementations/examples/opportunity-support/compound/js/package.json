@@ -6,12 +6,14 @@
   "repository": "",
   "author": "RAY",
   "scripts": {
-    "example": "yarn run babel && node dist/index.js",
-    "babel": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./test,./transpiled,./.babelrc,./package.json --copy-files"
+    "integration": "yarn run babel && node dist/index.js",
+    "babel": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./test,./.babelrc,./package.json --copy-files"
   },
   "dependencies": {
     "bignumber.js": "4.1.0",
-    "truffle-contract": "4.0.1"
+    "truffle-contract": "4.0.1",
+    "truffle": "5.0.2",
+    "web3": "1.2.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
