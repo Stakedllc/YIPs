@@ -74,6 +74,7 @@ Implementations should be specific to a coin. In example, if run with an environ
 - Off-chain file(s) that implements Compound integration following the specification, written in JS.
 - A Truffle migration script with the correct order of operations/parameters required to deploy the Compound Lending Opportunity contract.
 - Dependency contract address(es) from the Compound system for Mainnet and if possible, Kovan testnet. If Kovan support is not available, reach out to team and discuss options.
+- Answers to [these questions](https://github.com/Stakedllc/YIPs/blob/master/implementations/examples/opportunity-support/compound/other/answers.md).
 - Add support to this opportunity for ETH, DAI, USDC and SAI.
 
 ### Guidelines
