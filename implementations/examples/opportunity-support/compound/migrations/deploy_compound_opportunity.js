@@ -2,7 +2,7 @@
 * @notice  A Truffle-formatted migration to deploy the Compound Opportunity contract to
 *          Kovan/Mainnet, with coin configuration support for ETH, DAI, and USDC.
 *
-*          Compound has a different contract per market, hence the arrays matched for config.
+*          Compound has a different contract per market, hence the arrays matched for config. per coin.
 */
 
 
