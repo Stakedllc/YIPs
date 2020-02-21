@@ -26,50 +26,19 @@ Aave offers an interest-earning opportunity on ETH, DAI, and USDC. Aave also has
 
 ## Risk Evaluation
 <!--The potential or attached risk that should be considered for this proposal. Historical data should be provided. The process used to evaluate the risks should be detailed here.-->
+### Overview
 Launch of Platform: Jauary 8, 2020
 
 Assets Supported: BAT, DAI, ETH, KNC, LEND, LINK, MANA, MKR, REP, TUSD, USDC, USDT, WBTC, ZRX, SUSD, and SNX
 
 Oracle Solution: Chainlink
 
-- Risk Summary
-  - To-do.
-  
-- Resources
-  - [Aave Chainlink Blog Post](https://medium.com/aave/the-aave-oracle-network-powered-by-chainlink-is-now-live-45bb8a5a8c4e) 
-  - [Aave Chainlink Youtube Q&A](https://medium.com/aave/the-aave-oracle-network-powered-by-chainlink-is-now-live-45bb8a5a8c4e)
-
-Audits:
-
-- Trail of Bits - Sep. 2019 - [Report](https://github.com/trailofbits/publications/blob/master/reviews/aaveprotocol.pdf)
-  - 4-Person Weeks
-- OpenZepplin - Jan. 2020 - [Report](https://blog.openzeppelin.com/aave-protocol-audit/)
-  - Pre-Production Code.
--  Clement Lesaege from Kleros - On-Going
-
-Bug Bounty Program: Aave has a live bug bounty program that offers up to $25,000 for a critical bug. 
-
-- Reward Scheme
-  - Up to $25,000 for a critical bug
-  - Up to $10,000 for a very high-risk bug
-  - Up to $5,000 for a high-risk bug
-  - and continues declining the payout for less-critical bugs
-
-- Resources
-  - [Bug Bounty Information Page](https://aave.com/bug-bounty)
-
-Security Reports:
-- [Security Report #1](https://medium.com/aave/aave-security-report-d5a2edfe8e05) - Jan. 22, 2020
-
-Governence System: Aave is governed by the Aave team who hold special privileges within the protocol smart contracts. They are in the middle of transitioning governence to a DAO with voting rights delegated to holders of the LEND token. Details on the new system are sparse, but will hopefully come out soon. Concerns around how fast they can react to exploits arise when they start using a DAO.
-
-Fees: Aave takes a loan origination fee on all loans. The fee is currently set to 0.25%. Aave also takes a fee of 0.09% on flash loans. These parameters are subject to change by governence.
-
-Financial Risk Considerations:
+### Financial Risk Evaluation
 
 - Liquidity Risk: Defined as the ability to pull invested money out of the protocol in a timely fashion. As _X_ - the amount of tokens supplied by RAY, increases, liquidity risk should also increase. This can be properly monitored by looking at available liquidity in the pools. 
 
 - Liquidation Risk: Aave sets different parameters on each asset pool to manage liquidity risk. These parameters are subject to change by the Aave team / governence. We want a way of knowing if they do change these parameters. Their risk parameters are described by asset below:
+
   - ETH
     - Loan-to-value: 75%
     - Liquidation Threshold: 80%
@@ -128,6 +97,34 @@ Financial Risk Considerations:
     - Loan-to-value: 60%
     - Liquidation Threshold: 65%
     - Liquidation Bonus: 10%
+
+### Security & Governence Risk Evaluation
+
+Aave is governed by the Aave team who hold special privileges within the protocol smart contracts. With these priveleges, the team can change the logic of the protocol. They are in the middle of transitioning governence to a DAO with voting rights delegated to holders of the LEND token. Details on the new system are sparse, but will hopefully come out soon. Concerns around how fast they can react to exploits arise when they start using a DAO.
+
+Aave takes a loan origination fee of 0.25% on all loans. This fee is sent to seperate smart contract where it is pooled and eventually used to burn LEND tokens. The loan origination fee is LEND's primary method of value accrual. The fee itself is subject to change through governence.
+
+Audits:
+
+- Trail of Bits - Sep. 2019 - [Report](https://github.com/trailofbits/publications/blob/master/reviews/aaveprotocol.pdf)
+  - 4-Person Weeks
+- OpenZepplin - Jan. 2020 - [Report](https://blog.openzeppelin.com/aave-protocol-audit/)
+  - Pre-Production Code.
+-  Clement Lesaege from Kleros - On-Going
+
+Bug Bounty Program: Aave has a live bug bounty program that offers up to $25,000 for a critical bug. 
+
+- Reward Scheme
+  - Up to $25,000 for a critical bug
+  - Up to $10,000 for a very high-risk bug
+  - Up to $5,000 for a high-risk bug
+  - and continues declining the payout for less-critical bugs
+
+- Resources
+  - [Bug Bounty Information Page](https://aave.com/bug-bounty)
+
+Security Reports:
+- [Security Report #1](https://medium.com/aave/aave-security-report-d5a2edfe8e05) - Jan. 22, 2020
     
 ## Specification
 
