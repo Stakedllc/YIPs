@@ -69,12 +69,66 @@ Financial Risk Considerations:
 
 - Liquidity Risk: Defined as the ability to pull invested money out of the protocol in a timely fashion. As x, the amount of tokens supplied by RAY, increases, liquidity risk should also increase. This can be properly monitored by looking at available liquidity in the pools. 
 
-- Liquidation Risk: Defined as the ability of liquidators to timely meet the needs of the pool such that all collateral under the collateralization requirement parameter is liquidated before it reaches an undercollateralized state.
-
-  - Liquidation risk is further amplified when an asset has low liquidity. Such consideration for death-spiral risk must be taken into account.
-  
-  - In the case in which a lending protocol becomes undercollateralized, what is the mechanism from which suppliers will be repaid? Are losses socialized? Or do losses only accrue to the last suppliers to pull out funds, hence incentivizing a bank run when liquidation occurs? Can RAY mitigate these risks?
-
+- Liquidation Risk: Aave set different parameters on each asset pool to manage liquidity risk. Their risk parameters are described by asset below:
+  - ETH
+    - Loan-to-value: 75%
+    - Liquidation Threshold: 80%
+    - Liquidation Bonus: 5%
+  - DAI
+    - Loan-to-value: 75%
+    - Liquidation Threshold: 80%
+    - Liquidation Bonus: 5%
+  - USDC
+    - Loan-to-value: 75%
+    - Liquidation Threshold: 80%
+    - Liquidation Bonus: 5%
+  - SUSD
+    - Usage as collateral disabled
+  - TUSD
+    - Loan-to-value: 75%
+    - Liquidation Threshold: 80%
+    - Liquidation Bonus: 5%
+  - USDT
+    - Usage as collateral disabled
+  - BAT
+    - Loan-to-value: 60%
+    - Liquidation Threshold: 65%
+    - Liquidation Bonus: 10%
+  - KNC
+    - Loan-to-value: 60%
+    - Liquidation Threshold: 65%
+    - Liquidation Bonus: 10%
+  - LEND
+    - Loan-to-value: 40%
+    - Liquidation Threshold: 65%
+    - Liquidation Bonus: 15%
+  - LINK
+    - Loan-to-value: 65%
+    - Liquidation Threshold: 70%
+    - Liquidation Bonus: 10%
+  - MANA
+    - Loan-to-value: 60%
+    - Liquidation Threshold: 65%
+    - Liquidation Bonus: 10%
+  - MKR
+    - Loan-to-value: 35%
+    - Liquidation Threshold: 65%
+    - Liquidation Bonus: 10%
+  - REP
+    - Loan-to-value: 35%
+    - Liquidation Threshold: 65%
+    - Liquidation Bonus: 10%
+  - SNX
+    - Usage as collateral disabled
+  - WBTC
+    - Loan-to-value: 60%
+    - Liquidation Threshold: 65%
+    - Liquidation Bonus: 15%
+  - ZRX
+    - Loan-to-value: 60%
+    - Liquidation Threshold: 65%
+    - Liquidation Bonus: 10%
+    
 ## Specification
 
 The implementation of each function's signature and responsibilities are defined below:
