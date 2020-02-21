@@ -35,7 +35,32 @@ Oracle Solution: Chainlink
 
 ### Financial Risk Evaluation
 
-- Liquidity Risk: Defined as the ability to pull invested money out of the protocol in a timely fashion. As _X_ - the amount of tokens supplied by RAY, increases, liquidity risk should also increase. This can be properly monitored by looking at available liquidity in the pools. 
+- Liquidity Risk: Defined as the ability to pull invested money out of the protocol in a timely fashion. As _X_ - the amount of tokens supplied by RAY, increases, liquidity risk should also increase. This can be properly monitored by looking at available liquidity in the pools.
+
+  - ETH
+    - 7-Day Avg Available Liquidity (Cash): 15,003 ETH
+    - 7-Day Avg Total Supply: 17,193 ETH
+    - 7-Day Avg Percent of Pool in Cash: 87%
+  - DAI
+    - 7-Day Avg Available Liquidity (Cash): 168,275 DAI
+    - 7-Day Avg Total Supply: 891,353 DAI
+    - 7-Day Avg Percent of Pool in Cash: 19%
+  - USDC
+    - 7-Day Avg Available Liquidity (Cash): 94,136 USDC
+    - 7-Day Avg Total Supply: 444,224 USDC
+    - 7-Day Avg Percent of Pool in Cash: 21%
+  - SUSD
+    - 7-Day Avg Available Liquidity (Cash): 94,792 SUSD
+    - 7-Day Avg Total Supply: 210,448 SUSD
+    - 7-Day Avg Percent of Pool in Cash: 45%
+  - TUSD
+    - 7-Day Avg Available Liquidity (Cash): 366,102 TUSD
+    - 7-Day Avg Total Supply: 708,975 TUSD
+    - 7-Day Avg Percent of Pool in Cash: 52%
+  - USDT
+    - 7-Day Avg Available Liquidity (Cash): 498,426 USDT
+    - 7-Day Avg Total Supply: 2,828,215 USDT
+    - 7-Day Avg Percent of Pool in Cash: 18%
 
 - Liquidation Risk: Aave sets different parameters on each asset pool to manage liquidity risk. These parameters are subject to change by the Aave team / governence. We want a way of knowing if they do change these parameters. Their risk parameters are described by asset below:
 
@@ -112,16 +137,13 @@ Audits:
   - Pre-Production Code.
 -  Clement Lesaege from Kleros - On-Going
 
-Bug Bounty Program: Aave has a live bug bounty program that offers up to $25,000 for a critical bug. 
+Bug Bounty Program: 
 
 - Reward Scheme
   - Up to $25,000 for a critical bug
   - Up to $10,000 for a very high-risk bug
   - Up to $5,000 for a high-risk bug
   - and continues declining the payout for less-critical bugs
-
-- Resources
-  - [Bug Bounty Information Page](https://aave.com/bug-bounty)
 
 Security Reports:
 - [Security Report #1](https://medium.com/aave/aave-security-report-d5a2edfe8e05) - Jan. 22, 2020
