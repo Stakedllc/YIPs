@@ -61,6 +61,74 @@ Bug Bounty Program: Aave has a live bug bounty program that offers up to $25,000
 Security Reports:
 - [Security Report #1](https://medium.com/aave/aave-security-report-d5a2edfe8e05) - Jan. 22, 2020
 
+Governence System: Aave is governed by the Aave team who hold special privileges within the protocol smart contracts. They are in the middle of transitioning governence to a DAO with voting rights delegated to holders of the LEND token. Details on the new system are sparse, but will hopefully come out soon. Concerns around how fast they can react to exploits arise when they start using a DAO.
+
+Fees: Aave takes a loan origination fee on all loans. The fee is currently set to 0.25%. Aave also takes a fee of 0.09% on flash loans. These parameters are subject to change by governence.
+
+Financial Risk Considerations:
+
+- Liquidity Risk: Defined as the ability to pull invested money out of the protocol in a timely fashion. As _X_ - the amount of tokens supplied by RAY, increases, liquidity risk should also increase. This can be properly monitored by looking at available liquidity in the pools. 
+
+- Liquidation Risk: Aave sets different parameters on each asset pool to manage liquidity risk. These parameters are subject to change by the Aave team / governence. We want a way of knowing if they do change these parameters. Their risk parameters are described by asset below:
+  - ETH
+    - Loan-to-value: 75%
+    - Liquidation Threshold: 80%
+    - Liquidation Bonus: 5%
+  - DAI
+    - Loan-to-value: 75%
+    - Liquidation Threshold: 80%
+    - Liquidation Bonus: 5%
+  - USDC
+    - Loan-to-value: 75%
+    - Liquidation Threshold: 80%
+    - Liquidation Bonus: 5%
+  - SUSD
+    - Usage as collateral disabled
+  - TUSD
+    - Loan-to-value: 75%
+    - Liquidation Threshold: 80%
+    - Liquidation Bonus: 5%
+  - USDT
+    - Usage as collateral disabled
+  - BAT
+    - Loan-to-value: 60%
+    - Liquidation Threshold: 65%
+    - Liquidation Bonus: 10%
+  - KNC
+    - Loan-to-value: 60%
+    - Liquidation Threshold: 65%
+    - Liquidation Bonus: 10%
+  - LEND
+    - Loan-to-value: 40%
+    - Liquidation Threshold: 65%
+    - Liquidation Bonus: 15%
+  - LINK
+    - Loan-to-value: 65%
+    - Liquidation Threshold: 70%
+    - Liquidation Bonus: 10%
+  - MANA
+    - Loan-to-value: 60%
+    - Liquidation Threshold: 65%
+    - Liquidation Bonus: 10%
+  - MKR
+    - Loan-to-value: 35%
+    - Liquidation Threshold: 65%
+    - Liquidation Bonus: 10%
+  - REP
+    - Loan-to-value: 35%
+    - Liquidation Threshold: 65%
+    - Liquidation Bonus: 10%
+  - SNX
+    - Usage as collateral disabled
+  - WBTC
+    - Loan-to-value: 60%
+    - Liquidation Threshold: 65%
+    - Liquidation Bonus: 15%
+  - ZRX
+    - Loan-to-value: 60%
+    - Liquidation Threshold: 65%
+    - Liquidation Bonus: 10%
+    
 ## Specification
 
 The implementation of each function's signature and responsibilities are defined below:
