@@ -69,7 +69,7 @@ Financial Risk Considerations:
 
 - Liquidity Risk: Defined as the ability to pull invested money out of the protocol in a timely fashion. As x, the amount of tokens supplied by RAY, increases, liquidity risk should also increase. This can be properly monitored by looking at available liquidity in the pools. 
 
-- Liquidation Risk: Aave set different parameters on each asset pool to manage liquidity risk. Their risk parameters are described by asset below:
+- Liquidation Risk: Aave sets different parameters on each asset pool to manage liquidity risk. These parameters are subject to change by the Aave team / governence. Their risk parameters are described by asset below:
   - ETH
     - Loan-to-value: 75%
     - Liquidation Threshold: 80%
