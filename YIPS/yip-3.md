@@ -26,50 +26,44 @@ Aave offers an interest-earning opportunity on ETH, DAI, and USDC. Aave also has
 
 ## Risk Evaluation
 <!--The potential or attached risk that should be considered for this proposal. Historical data should be provided. The process used to evaluate the risks should be detailed here.-->
+### Overview
 Launch of Platform: Jauary 8, 2020
 
 Assets Supported: BAT, DAI, ETH, KNC, LEND, LINK, MANA, MKR, REP, TUSD, USDC, USDT, WBTC, ZRX, SUSD, and SNX
 
 Oracle Solution: Chainlink
 
-- Risk Summary
-  - To-do.
-  
-- Resources
-  - [Aave Chainlink Blog Post](https://medium.com/aave/the-aave-oracle-network-powered-by-chainlink-is-now-live-45bb8a5a8c4e) 
-  - [Aave Chainlink Youtube Q&A](https://medium.com/aave/the-aave-oracle-network-powered-by-chainlink-is-now-live-45bb8a5a8c4e)
+### Financial Risk Evaluation
 
-Audits:
+- Liquidity Risk: Defined as the ability to pull invested money out of the protocol in a timely fashion. As _X_ - the amount of tokens supplied by RAY, increases, liquidity risk should also increase. This can be properly monitored by looking at available liquidity in the pools.
 
-- Trail of Bits - Sep. 2019 - [Report](https://github.com/trailofbits/publications/blob/master/reviews/aaveprotocol.pdf)
-  - 4-Person Weeks
-- OpenZepplin - Jan. 2020 - [Report](https://blog.openzeppelin.com/aave-protocol-audit/)
-  - Pre-Production Code.
--  Clement Lesaege from Kleros - On-Going
+  - ETH
+    - 7-Day Avg Available Liquidity (Cash): 15,003 ETH
+    - 7-Day Avg Total Supply: 17,193 ETH
+    - 7-Day Avg Percent of Pool in Cash: 87%
+  - DAI
+    - 7-Day Avg Available Liquidity (Cash): 168,275 DAI
+    - 7-Day Avg Total Supply: 891,353 DAI
+    - 7-Day Avg Percent of Pool in Cash: 19%
+  - USDC
+    - 7-Day Avg Available Liquidity (Cash): 94,136 USDC
+    - 7-Day Avg Total Supply: 444,224 USDC
+    - 7-Day Avg Percent of Pool in Cash: 21%
+  - SUSD
+    - 7-Day Avg Available Liquidity (Cash): 94,792 SUSD
+    - 7-Day Avg Total Supply: 210,448 SUSD
+    - 7-Day Avg Percent of Pool in Cash: 45%
+  - TUSD
+    - 7-Day Avg Available Liquidity (Cash): 366,102 TUSD
+    - 7-Day Avg Total Supply: 708,975 TUSD
+    - 7-Day Avg Percent of Pool in Cash: 52%
+  - USDT
+    - 7-Day Avg Available Liquidity (Cash): 498,426 USDT
+    - 7-Day Avg Total Supply: 2,828,215 USDT
+    - 7-Day Avg Percent of Pool in Cash: 18%
 
-Bug Bounty Program: Aave has a live bug bounty program that offers up to $25,000 for a critical bug. 
+- Liquidation Risk: Aave sets different parameters on each asset pool to manage liquidity risk. These parameters are subject to change by the Aave team / governance. We want a way of knowing if they do change these parameters. Their risk parameters are described by asset below:
 
-- Reward Scheme
-  - Up to $25,000 for a critical bug
-  - Up to $10,000 for a very high-risk bug
-  - Up to $5,000 for a high-risk bug
-  - and continues declining the payout for less-critical bugs
-
-- Resources
-  - [Bug Bounty Information Page](https://aave.com/bug-bounty)
-
-Security Reports:
-- [Security Report #1](https://medium.com/aave/aave-security-report-d5a2edfe8e05) - Jan. 22, 2020
-
-Governence System: Aave is governed by the Aave team who hold special privileges within the protocol smart contracts. They are in the middle of transitioning governence to a DAO with voting rights delegated to holders of the LEND token. Details on the new system are sparse, but will hopefully come out soon. Concerns around how fast they can react to exploits arise when they start using a DAO.
-
-Fees: Aave takes a loan origination fee on all loans. The fee is currently set to 0.25%. Aave also takes a fee of 0.09% on flash loans. These parameters are subject to change by governence.
-
-Financial Risk Considerations:
-
-- Liquidity Risk: Defined as the ability to pull invested money out of the protocol in a timely fashion. As _X_ - the amount of tokens supplied by RAY, increases, liquidity risk should also increase. This can be properly monitored by looking at available liquidity in the pools. 
-
-- Liquidation Risk: Aave sets different parameters on each asset pool to manage liquidity risk. These parameters are subject to change by the Aave team / governence. We want a way of knowing if they do change these parameters. Their risk parameters are described by asset below:
   - ETH
     - Loan-to-value: 75%
     - Liquidation Threshold: 80%
@@ -128,6 +122,31 @@ Financial Risk Considerations:
     - Loan-to-value: 60%
     - Liquidation Threshold: 65%
     - Liquidation Bonus: 10%
+
+### Security & Governance Risk Evaluation
+
+Aave is governed by the Aave team who hold special privileges within the protocol smart contracts. With these privileges, the team can change the logic of the protocol. They are in the middle of transitioning governance to a DAO with voting rights delegated to holders of the LEND token. Details on the new system are sparse, but will hopefully come out soon. Concerns around how fast they can react to exploits arise when they start using a DAO.
+
+Aave takes a loan origination fee of 0.25% on all loans. This fee is sent to a separate smart contract where it is pooled and eventually used to burn LEND tokens. The loan origination fee is LEND's primary method of value accrual. The fee itself is subject to change through governance.
+
+Audits:
+
+- Trail of Bits - Sep. 2019 - [Report](https://github.com/trailofbits/publications/blob/master/reviews/aaveprotocol.pdf)
+  - 4-Person Weeks
+- OpenZepplin - Jan. 2020 - [Report](https://blog.openzeppelin.com/aave-protocol-audit/)
+  - Pre-Production Code.
+-  Clement Lesaege from Kleros - On-Going
+
+Bug Bounty Program: 
+
+- Reward Scheme
+  - Up to $25,000 for a critical bug
+  - Up to $10,000 for a very high-risk bug
+  - Up to $5,000 for a high-risk bug
+  - and continues declining the payout for less-critical bugs
+
+Security Reports:
+- [Security Report #1](https://medium.com/aave/aave-security-report-d5a2edfe8e05) - Jan. 22, 2020
     
 ## Specification
 
