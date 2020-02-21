@@ -62,7 +62,7 @@ Oracle Solution: Chainlink
     - 7-Day Avg Total Supply: 2,828,215 USDT
     - 7-Day Avg Percent of Pool in Cash: 18%
 
-- Liquidation Risk: Aave sets different parameters on each asset pool to manage liquidity risk. These parameters are subject to change by the Aave team / governence. We want a way of knowing if they do change these parameters. Their risk parameters are described by asset below:
+- Liquidation Risk: Aave sets different parameters on each asset pool to manage liquidity risk. These parameters are subject to change by the Aave team / governance. We want a way of knowing if they do change these parameters. Their risk parameters are described by asset below:
 
   - ETH
     - Loan-to-value: 75%
@@ -123,11 +123,11 @@ Oracle Solution: Chainlink
     - Liquidation Threshold: 65%
     - Liquidation Bonus: 10%
 
-### Security & Governence Risk Evaluation
+### Security & Governance Risk Evaluation
 
-Aave is governed by the Aave team who hold special privileges within the protocol smart contracts. With these priveleges, the team can change the logic of the protocol. They are in the middle of transitioning governence to a DAO with voting rights delegated to holders of the LEND token. Details on the new system are sparse, but will hopefully come out soon. Concerns around how fast they can react to exploits arise when they start using a DAO.
+Aave is governed by the Aave team who hold special privileges within the protocol smart contracts. With these privileges, the team can change the logic of the protocol. They are in the middle of transitioning governance to a DAO with voting rights delegated to holders of the LEND token. Details on the new system are sparse, but will hopefully come out soon. Concerns around how fast they can react to exploits arise when they start using a DAO.
 
-Aave takes a loan origination fee of 0.25% on all loans. This fee is sent to a seperate smart contract where it is pooled and eventually used to burn LEND tokens. The loan origination fee is LEND's primary method of value accrual. The fee itself is subject to change through governence.
+Aave takes a loan origination fee of 0.25% on all loans. This fee is sent to a separate smart contract where it is pooled and eventually used to burn LEND tokens. The loan origination fee is LEND's primary method of value accrual. The fee itself is subject to change through governance.
 
 Audits:
 
