@@ -33,6 +33,16 @@ Assets Supported: BAT, DAI, ETH, KNC, LEND, LINK, MANA, MKR, REP, TUSD, USDC, US
 
 Oracle Solution: Chainlink
 
+### Summary
+
+Aave is riskier than Compound and dYdX on a technical and financial basis.
+
+Financially, Aave supports a number of ERC-20 tokens as collateral that have small market caps and daily trading volumes. As the leverage of these tokens builds up on Aave, there is increased liquidation risk because of the potential for slippage on liquidation and a deflationary spiral. Aave mitigates this risk through safety parameters set by governence. However, these safety measures are a best guess and the platform is relatively untested.
+
+Technically, Aave has gone through two security audits and is going through at least one additional audit at the moment. Aave chose Chainlink as an oracle solution, and generally, seems to have followed best practices in development of the protocol. However, Aave has not gone through the test of time that protocols such as Compound and dYdX have. A bounty of millions of dollars locked in a smart contract is often the most reassuring sign of security.
+
+In conclusion, we believe Aave is a suitable opportunity to add to RAY. Although it is riskier than Compound and dYdX, Aave offers a potential opportunity for higher yields. As always, depositors will have the discretion to choose Aave as an opportunity.
+
 ### Financial Risk Evaluation
 
 - Liquidity Risk: Defined as the ability to pull invested money out of the protocol in a timely fashion.
