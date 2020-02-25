@@ -121,34 +121,28 @@ Oracle Solution: Chainlink
   
   - Liquidation Metrics: 
     
-    - Daily Trading Volume / Aave Reserve Size: This metric illustrates how liquidations might affect an asset's trading market. As this metric grows, the liquidation mechanism becomes less effective because of potential price slippage and the risk of a deflationary spiral. This metric, in the context of lending protocols, is introduced and detailed in [Gauntlet's assessment of Compound](https://gauntlet.network/reports/CompoundMarketRiskAssessment.pdf). 
+    - Reserve Size / Daily Trading Volume: This metric illustrates how liquidations might affect an asset's trading market. As this metric grows, the liquidation mechanism becomes less effective because of potential price slippage and the risk of a deflationary spiral. This metric, in the context of lending protocols, is introduced and detailed in [Gauntlet's assessment of Compound](https://gauntlet.network/reports/CompoundMarketRiskAssessment.pdf). The following data was calculated with Messari price and real volume data for the last 24 hours.
   
     - ETH
-       - Daily Trading Volume / Aave Reserve Size: 75%
-    - DAI
-       - Daily Trading Volume / Aave Reserve Size: 75%
-    - USDC
-       - Daily Trading Volume / Aave Reserve Size: 75%
-    - TUSD
-       - Daily Trading Volume / Aave Reserve Size: 75%
+       - Reserve Size / Daily Trading Volume: 1.01%
     - BAT
-       - Daily Trading Volume / Aave Reserve Size: 75%
+       - Reserve Size / Daily Trading Volume: 1%
     - KNC
-       - Daily Trading Volume / Aave Reserve Size: 75%
+       - Reserve Size / Daily Trading Volume: 6.85%
     - LEND
-       - Daily Trading Volume / Aave Reserve Size: 75%
+       - Reserve Size / Daily Trading Volume: 309.23%
     - LINK
-      - Daily Trading Volume / Aave Reserve Size: 75%
+      - Reserve Size / Daily Trading Volume: 11.12%
     - MANA
-      - Daily Trading Volume / Aave Reserve Size: 75%
+      - Reserve Size / Daily Trading Volume: 5.61%
     - MKR
-      - Daily Trading Volume / Aave Reserve Size: 75%
+      - Reserve Size / Daily Trading Volume: 2,531.20%
     - REP
-      - Daily Trading Volume / Aave Reserve Size: 75%
-    - WBTC
-      - Daily Trading Volume / Aave Reserve Size: 75%
+      - Reserve Size / Daily Trading Volume: 3.99%
     - ZRX
-      - Daily Trading Volume / Aave Reserve Size: 75%
+      - Reserve Size / Daily Trading Volume: 0.98%
+    - WBTC
+      - No messari data
     - SUSD, USDT, SNX
       - Usage as collateral disabled
   
