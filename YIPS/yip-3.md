@@ -35,94 +35,123 @@ Oracle Solution: Chainlink
 
 ### Financial Risk Evaluation
 
-- Liquidity Risk: Defined as the ability to pull invested money out of the protocol in a timely fashion. As _X_ - the amount of tokens supplied by RAY, increases, liquidity risk should also increase. This can be properly monitored by looking at available liquidity in the pools.
+- Liquidity Risk: Defined as the ability to pull invested money out of the protocol in a timely fashion.
 
-  - ETH
-    - 7-Day Avg Available Liquidity (Cash): 15,003 ETH
-    - 7-Day Avg Total Supply: 17,193 ETH
-    - 7-Day Avg Percent of Pool in Cash: 87%
-  - DAI
-    - 7-Day Avg Available Liquidity (Cash): 168,275 DAI
-    - 7-Day Avg Total Supply: 891,353 DAI
-    - 7-Day Avg Percent of Pool in Cash: 19%
-  - USDC
-    - 7-Day Avg Available Liquidity (Cash): 94,136 USDC
-    - 7-Day Avg Total Supply: 444,224 USDC
-    - 7-Day Avg Percent of Pool in Cash: 21%
-  - SUSD
-    - 7-Day Avg Available Liquidity (Cash): 94,792 SUSD
-    - 7-Day Avg Total Supply: 210,448 SUSD
-    - 7-Day Avg Percent of Pool in Cash: 45%
-  - TUSD
-    - 7-Day Avg Available Liquidity (Cash): 366,102 TUSD
-    - 7-Day Avg Total Supply: 708,975 TUSD
-    - 7-Day Avg Percent of Pool in Cash: 52%
-  - USDT
-    - 7-Day Avg Available Liquidity (Cash): 498,426 USDT
-    - 7-Day Avg Total Supply: 2,828,215 USDT
-    - 7-Day Avg Percent of Pool in Cash: 18%
+  - Interest Rate Model: Lending protocols use interest models to properly incentivize liquidity in a given pool. Aave sets a target utliization, a base rate, and two rate slopes for each reserve (asset pool). These parameters inform the interest rate model below. The interest rate model is linear when utilization < target utilization rate, and quadratic when utilization >= target utilization rate.
+  
+    Variable Borrow Rate: 
+      - Utilization < Target Utilization
+        - Base Rate + (Utilization * Rate Slope 1)
+      - Utililzation >= Target Utilization
+        - Base Rate + Rate Slope 1 + ((Utilization - Target Utilization)/(1 - Target Utilization)) * Rate Slope 2
 
-- Liquidation Risk: Aave sets different parameters on each asset pool to manage liquidity risk. These parameters are subject to change by the Aave team / governance. We want a way of knowing if they do change these parameters. Their risk parameters are described by asset below:
+    Variable Supply Rate:
+      - Variable Borrow Rate * Utilization
+      
+    Interest Rate Parameters:
+    
+      - ETH
+        - Variable Base Borrow Rate:  0
+        - Variable Borrow Slope 1:  0.08
+        - Variable Borrow Slope 2:  0.5
+        - Optimal Utilization:  0.8
+      - DAI, USDC, SUSD, TUSD, USDT
+        - Variable Base Borrow Rate:  0.01
+        - Variable Borrow Slope 1:  0.05
+        - Variable Borrow Slope 2:  0.5
+        - Optimal Utilization:  0.8
+        
+  - Liquidity Metrics:
 
-  - ETH
-    - Loan-to-value: 75%
-    - Liquidation Threshold: 80%
-    - Liquidation Bonus: 5%
-  - DAI
-    - Loan-to-value: 75%
-    - Liquidation Threshold: 80%
-    - Liquidation Bonus: 5%
-  - USDC
-    - Loan-to-value: 75%
-    - Liquidation Threshold: 80%
-    - Liquidation Bonus: 5%
-  - SUSD
-    - Usage as collateral disabled
-  - TUSD
-    - Loan-to-value: 75%
-    - Liquidation Threshold: 80%
-    - Liquidation Bonus: 5%
-  - USDT
-    - Usage as collateral disabled
-  - BAT
-    - Loan-to-value: 60%
-    - Liquidation Threshold: 65%
-    - Liquidation Bonus: 10%
-  - KNC
-    - Loan-to-value: 60%
-    - Liquidation Threshold: 65%
-    - Liquidation Bonus: 10%
-  - LEND
-    - Loan-to-value: 40%
-    - Liquidation Threshold: 65%
-    - Liquidation Bonus: 15%
-  - LINK
-    - Loan-to-value: 65%
-    - Liquidation Threshold: 70%
-    - Liquidation Bonus: 10%
-  - MANA
-    - Loan-to-value: 60%
-    - Liquidation Threshold: 65%
-    - Liquidation Bonus: 10%
-  - MKR
-    - Loan-to-value: 35%
-    - Liquidation Threshold: 65%
-    - Liquidation Bonus: 10%
-  - REP
-    - Loan-to-value: 35%
-    - Liquidation Threshold: 65%
-    - Liquidation Bonus: 10%
-  - SNX
-    - Usage as collateral disabled
-  - WBTC
-    - Loan-to-value: 60%
-    - Liquidation Threshold: 65%
-    - Liquidation Bonus: 15%
-  - ZRX
-    - Loan-to-value: 60%
-    - Liquidation Threshold: 65%
-    - Liquidation Bonus: 10%
+    - ETH
+      - 7-Day Avg Available Liquidity (Cash): 15,003 ETH
+      - 7-Day Avg Total Supply: 17,193 ETH
+      - 7-Day Avg Percent of Pool in Cash: 87%
+    - DAI
+      - 7-Day Avg Available Liquidity (Cash): 168,275 DAI
+      - 7-Day Avg Total Supply: 891,353 DAI
+      - 7-Day Avg Percent of Pool in Cash: 19%
+    - USDC
+      - 7-Day Avg Available Liquidity (Cash): 94,136 USDC
+      - 7-Day Avg Total Supply: 444,224 USDC
+      - 7-Day Avg Percent of Pool in Cash: 21%
+    - SUSD
+      - 7-Day Avg Available Liquidity (Cash): 94,792 SUSD
+      - 7-Day Avg Total Supply: 210,448 SUSD
+      - 7-Day Avg Percent of Pool in Cash: 45%
+    - TUSD
+      - 7-Day Avg Available Liquidity (Cash): 366,102 TUSD
+      - 7-Day Avg Total Supply: 708,975 TUSD
+      - 7-Day Avg Percent of Pool in Cash: 52%
+    - USDT
+      - 7-Day Avg Available Liquidity (Cash): 498,426 USDT
+      - 7-Day Avg Total Supply: 2,828,215 USDT
+      - 7-Day Avg Percent of Pool in Cash: 18%
 
+- Liquidation Risk: Defined as the ability of liquidators to keep loans from becoming undercollateralized.
+
+  - Liquidation Parameters: Aave sets different parameters on each asset pool to manage liquidity risk. These parameters are subject to change by the Aave team / governance. We want a way of knowing if they do change these parameters. Their risk parameters are listed by asset below and ordered by descending loan-to-value:
+
+    - ETH, DAI, USDC, TUSD, 
+      - Loan-to-value: 75%
+      - Liquidation Threshold: 80%
+      - Liquidation Bonus: 5%
+    - LINK
+      - Loan-to-value: 65%
+      - Liquidation Threshold: 70%
+      - Liquidation Bonus: 10%
+    - BAT, KNC, MANA, ZRX
+      - Loan-to-value: 60%
+      - Liquidation Threshold: 65%
+      - Liquidation Bonus: 10%
+    - WBTC
+      - Loan-to-value: 60%
+      - Liquidation Threshold: 65%
+      - Liquidation Bonus: 15%
+    - LEND
+      - Loan-to-value: 40%
+      - Liquidation Threshold: 65%
+      - Liquidation Bonus: 15%
+    - MKR, REP
+      - Loan-to-value: 35%
+      - Liquidation Threshold: 65%
+      - Liquidation Bonus: 10%
+    - SUSD, USDT, SNX
+      - Usage as collateral disabled
+  
+  - Liquidation Metrics: 
+    
+    - Daily Trading Volume / Aave Reserve Size: This metric illustrates how liquidations might affect an asset's trading market. As this metric grows, the liquidation mechanism becomes less effective because of potential price slippage and the risk of a deflationary spiral. This metric, in the context of lending protocols, is introduced and detailed in [Gauntlet's assessment of Compound](https://gauntlet.network/reports/CompoundMarketRiskAssessment.pdf). 
+  
+    - ETH
+       - Daily Trading Volume / Aave Reserve Size: 75%
+    - DAI
+       - Daily Trading Volume / Aave Reserve Size: 75%
+    - USDC
+       - Daily Trading Volume / Aave Reserve Size: 75%
+    - TUSD
+       - Daily Trading Volume / Aave Reserve Size: 75%
+    - BAT
+       - Daily Trading Volume / Aave Reserve Size: 75%
+    - KNC
+       - Daily Trading Volume / Aave Reserve Size: 75%
+    - LEND
+       - Daily Trading Volume / Aave Reserve Size: 75%
+    - LINK
+      - Daily Trading Volume / Aave Reserve Size: 75%
+    - MANA
+      - Daily Trading Volume / Aave Reserve Size: 75%
+    - MKR
+      - Daily Trading Volume / Aave Reserve Size: 75%
+    - REP
+      - Daily Trading Volume / Aave Reserve Size: 75%
+    - WBTC
+      - Daily Trading Volume / Aave Reserve Size: 75%
+    - ZRX
+      - Daily Trading Volume / Aave Reserve Size: 75%
+    - SUSD, USDT, SNX
+      - Usage as collateral disabled
+  
 ### Security & Governance Risk Evaluation
 
 Aave is governed by the Aave team who hold special privileges within the protocol smart contracts. With these privileges, the team can change the logic of the protocol. They are in the middle of transitioning governance to a DAO with voting rights delegated to holders of the LEND token. Details on the new system are sparse, but will hopefully come out soon. Concerns around how fast they can react to exploits arise when they start using a DAO.
