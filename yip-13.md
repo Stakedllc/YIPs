@@ -1,6 +1,6 @@
 ---
-yip: <to be assigned>
-title: Futureswap Opportunity
+yip: 13
+title: Futureswap Liquidity Supply Opportunity
 author: Devan Purhar @dpurhar27, Sam Mitchell @samatstaked
 discussions-to: https://discord.gg/ddHep6E
 status: WIP
