@@ -6,8 +6,8 @@ const DDEXOpportunityContract = artifacts.require("DDEXOpportunity");
 
 // RAY coins (don't change)
 const KOVAN_WETH_ADDRESS = '0xd0A1E359811322d97991E03f863a0C30C2cF029C';
-const KOVAN_DAI_ADDRESS = '0xC4375B7De8af5a38a93548eb8453a498222C4fF2';
-const KOVAN_USDC_ADDRESS = '0xC4375B7De8af5a38a93548eb8453a498222C4fF2';
+const KOVAN_DAI_ADDRESS = '0x2Bd0BE15eb750dedD21b7D56c19101D5ACE14915';
+const KOVAN_USDC_ADDRESS = '0x06898143df04616a8a8f9614deb3b99ba12b3096';
 
 // RAY contracts (don't change)
 const KOVAN_RAY_STORAGE_ADDRESS = '0xdFD8D105402b6841eCa5593EC41a4172De55ea02';
@@ -16,8 +16,8 @@ const KOVAN_RAY_STORAGE_ADDRESS = '0xdFD8D105402b6841eCa5593EC41a4172De55ea02';
 // if I want to lend ${coin}, what contract address I am submitting
 // DDEX uses the ERC20 coins address, and a special address to represent ETH
 const KOVAN_DDEX_ETH = '0x000000000000000000000000000000000000000e';
-const KOVAN_DDEX_DAI = ''; // fill out please
-const KOVAN_DDEX_USDC = ''; // fill out please
+const KOVAN_DDEX_DAI = '0x2Bd0BE15eb750dedD21b7D56c19101D5ACE14915'; // fill out please
+const KOVAN_DDEX_USDC = '0x06898143df04616a8a8f9614deb3b99ba12b3096'; // fill out please
 
 // DDEX contract address on kovan
 const KOVAN_DDEX_MARGIN_ADDRESS = '0x6365A486952EFfd97415d52a9eF87B6450026498'
