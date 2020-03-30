@@ -37,16 +37,19 @@ class DDEXLender {
   }
 
   async modelRates(supply) {
-    if (supply <= 0) {
-      return "0"
-    } 
     let totalSupply = await this.ddexContract.contract.methods.getTotalSupply(this.tokenAddress).call();
     let supplyRate =  await this.getRate();
-    let totalSupplyBignumber = new BigNumber(totalSupply)
-    let supplyRateBignumber = new BigNumber(supplyRate)
+    let supplyBigNumber = new BigNumber(supply);
+    let totalSupplyBignumber = new BigNumber(totalSupply);
+    let supplyRateBignumber = new BigNumber(supplyRate);
 
-    let supplyInterestBignumber = totalSupplyBignumber.mul(supplyRateBignumber)
-    let modelRate = supplyInterestBignumber.div(totalSupplyBignumber.add(new BigNumber(supply)))
+    let newTotalSupplyBignumber = totalSupplyBignumber.add(supplyBigNumber)
+    if (newTotalSupplyBignumber.isNeg()) {
+      return "0";
+    }
+
+    let supplyInterestBignumber = totalSupplyBignumber.mul(supplyRateBignumber);
+    let modelRate = supplyInterestBignumber.div(newTotalSupplyBignumber);
     return modelRate.toString();
   }
 
