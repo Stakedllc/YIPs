@@ -52,6 +52,9 @@ Lendf uses an in-house oracle solution, similar to Maker's medianizer. They aggr
 **Governence**
 Lendf is a dForce ecosystem project, and is therefore governed by the DF token. The token votes on asset integration, fees, interest rate models and more.
 
+**Security**
+I can not find any security audits for the Lendf smart contracts.
+
 To-do: More governence research, historical data for: oracle performance, risk (liquidation performance), liquidity, and interest rates. 
 
 ## Specification
