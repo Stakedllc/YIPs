@@ -1,5 +1,5 @@
 ---
-yip: <to be assigned>
+yip: 14
 title: Lendf Lending Opportunity
 author: Sam Mitchell @samatstaked, Devan Purhar @dpurhar27
 discussions-to: <to be assigned>
@@ -18,7 +18,7 @@ Lendf must be integrated as an opportunity before RAY can allocate funds.
 
 ## Motivation
 <!--The motivation is critical for YIPs that want to change the RAY protocol. It should clearly explain why the existing protocol specification is inadequate to address the problem that the YIP solves. YIP submissions without sufficient motivation may be rejected outright.-->
-Expanding the opportunity set to include Lendf will give RAY another opportunity to outperform the benchmark rate.
+Expanding the opportunity set to include Lendf will give RAY another opportunity to outperform the benchmark rate. Lendf also supports markets and assets RAY is looking to expand to, that existing opportunities lack. 
 
 ## Yield Evaluation
 <!--The potential added value for extra yield generation. Historical data should be provided. The process used to evaluate the yield potential should be detailed here.-->
@@ -49,13 +49,13 @@ ETH and BTC,
 **Oracle Solution:**
 Lendf uses an in-house oracle solution, similar to Maker's medianizer. They aggregate real-time price data from exchanges, mediate (medianize?) the data, and publish it on-chain periodically. 
 
-**Governence**
+**Governance**
 Lendf is a dForce ecosystem project, and is therefore governed by the DF token. The token votes on asset integration, fees, interest rate models and more.
 
 **Security**
 I can not find any security audits for the Lendf smart contracts.
 
-To-do: More governence research, historical data for: oracle performance, risk (liquidation performance), liquidity, and interest rates. 
+To-do: More governance research, historical data for: oracle performance, risk (liquidation performance), liquidity, interest rates. 
 
 ## Specification
 
