@@ -3,7 +3,7 @@ yip: 14
 title: Lendf Lending Opportunity
 author: Sam Mitchell @samatstaked, Devan Purhar @dpurhar27
 discussions-to: <to be assigned>
-status: WIP
+status: Rejected
 ---
 
 ## Simple Summary
@@ -53,9 +53,7 @@ Lendf uses an in-house oracle solution, similar to Maker's medianizer. They aggr
 Lendf is a dForce ecosystem project, and is therefore governed by the DF token. The token votes on asset integration, fees, interest rate models and more.
 
 **Security**
-I can not find any security audits for the Lendf smart contracts.
-
-To-do: More governance research, historical data for: oracle performance, risk (liquidation performance), liquidity, interest rates. 
+Illustrating the importance of this section, Lendf was hacked in April of 2020.
 
 ## Specification
 
