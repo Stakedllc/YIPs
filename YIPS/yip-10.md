@@ -3,8 +3,9 @@ yip: 10
 title: SAI DAI Price Opportunity
 author: Sam Mitchell @samatstaked
 discussions-to: https://discord.gg/nvRCzYp
-status: WIP
+status: Rejected
 created: 2020-02-09
+updated: 2020-08-25
 ---
 
 ## Simple Summary
