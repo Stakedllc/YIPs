@@ -23,7 +23,7 @@ Adding this Opportunity will potentially boost the yields that RAY can generate 
 
 ## Yield Evaluation
 <!--The potential added value for extra yield generation. Historical data should be provided. The process used to evaluate the yield potential should be detailed here.-->
-Uniswap V2 is modeled in the [YIPs dashboard](). Currently, the 
+Uniswap V2 is modeled in the [YIPs dashboard](https://app.redash.io/staked/public/dashboards/djXVmljfvx4NkXIWSWP4tIhIaU71SGIu3bnZRXkS). Currently, the model takes into account the fixed swap fee of entering and exiting the pool with a single asset (0.3%). It does not take into account slippage, however.
 
 ## Risk Evaluation
 <!--The potential or attached risk that should be considered for this proposal. Historical data should be provided. The process used to evaluate the risks should be detailed here.-->
