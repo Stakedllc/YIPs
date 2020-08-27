@@ -1,10 +1,12 @@
 ---
 yip: 11
 title: DDEX Lending Opportunity
+type: Opportunity
 author: Sam Mitchell @samatstaked, Devan Purhar @dpurhar27
 discussions-to: https://discord.gg/tgynpaq
 status: WIP
 created: 2020-02-03
+updated: 2020-08-26
 ---
 
 ## Simple Summary

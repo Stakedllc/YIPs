@@ -1,10 +1,12 @@
 ---
 yip: 6
 title: Maker Collateral Auction Opportunity
+type: Opportunity
 author: Sam Mitchell @samatstaked, Devan Purhar @dpurhar27
 discussions-to: https://discord.gg/nvRCzYp
-status: WIP
+status: Abandoned
 created: 2020-02-08
+updated: 2020-08-26
 ---
 
 ## Simple Summary

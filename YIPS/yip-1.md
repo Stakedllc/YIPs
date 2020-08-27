@@ -1,10 +1,11 @@
 ---
 yip: 1
 title: YIP Purpose and Guidelines
-status: WIP
+type: Meta
+status: Accepted
 author: Devan Purhar <devan@staked.us>
 created: 2020-01-24
-updated: 2020-01-27
+updated: 2020-01-27, 2020-08-26
 ---
 
 ## What is an YIP?
