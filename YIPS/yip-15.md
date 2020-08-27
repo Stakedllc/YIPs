@@ -1,6 +1,6 @@
 ---
 yip: 15
-title: Recursive COMP Farming
+title: Recursive COMP Farming Opportunity
 type: Opportunity
 author: Jonathan Marcus @jonathanmarcus, Devan Purhar @dpurhar27, Sam Mitchell @samatstaked
 discussions-to: https://discord.gg/rQ3WRJE
