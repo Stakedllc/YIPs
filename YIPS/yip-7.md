@@ -1,10 +1,12 @@
 ---
 yip: 7
 title: bZx Bounty Hunter Opportunity
+type: Opportunity
 author: Sam Mitchell @samatstaked
 discussions-to: https://discord.gg/nvRCzYp
-status: WIP
+status: Abandoned
 created: 2020-02-09
+updated: 2020-08-26
 ---
 
 ## Simple Summary

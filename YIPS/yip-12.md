@@ -1,10 +1,12 @@
 ---
 yip: 12
 title: Curve Liquidity Supply Opportunity
+type: Opportunity
 author: Devan Purhar @dpurhar27, Sam Mitchell @samatstaked
 discussions-to: https://github.com/Stakedllc/YIPs/issues/26
 status: WIP
 created: 2020-02-12
+updated: 2020-08-26
 ---
 
 <!--You can leave these HTML comments in your merged YIP and delete the visible duplicate text guides, they will not appear and may be helpful to refer to if you edit it again. This is the suggested template for new YIPs. Note that an YIP number will be assigned by an editor. When opening a pull request to submit your YIP, please use an abbreviated title in the filename, `yip-draft_title_abbrev.md`. The title should be 44 characters or less.-->

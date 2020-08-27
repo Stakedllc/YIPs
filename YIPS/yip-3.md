@@ -1,9 +1,10 @@
 ---
 yip: 3
 title: Aave Lending Opportunity
+type: Opportunity
 author: Sam Mitchell <sam@staked.us>, Devan Purhar @dpurhar27
 discussions-to: https://discord.gg/nvRCzYp
-status: WIP
+status: Accepted
 created: 2020-02-03
 updated: 2020-02-19, 2020-02-20
 ---
