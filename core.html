@@ -1,0 +1,7 @@
+---
+layout: page
+title: Core
+---
+
+{% assign yips=site.pages|where:"type","Standards Track"|where:"category","Core" %}
+{% include yiptable.html yips=yips %}
