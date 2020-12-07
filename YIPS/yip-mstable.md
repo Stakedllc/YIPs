@@ -4,7 +4,7 @@ title: mStable Lending Opportunity
 author: Devan Purhar @dpurhar27, Sam Mitchell @samatstaked, Andrea Burzi <...>
 discussions-to: <to be assigned>
 status: WIP
-created: Dec. 7, 2020
+created: 2020-12-07
 ---
 
 ## Simple Summary
@@ -143,6 +143,9 @@ Follow [this submission](https://github.com/Stakedllc/YIPs/tree/master/implement
 ## Security Considerations
 <!--All YIPs must contain a section that discusses the security implications/considerations relevant to the proposed change. Include information that might be important for security discussions, surfaces risks and can be used throughout the life cycle of the proposal. E.g. include security-relevant design decisions, concerns, important discussions, implementation-specific guidance and pitfalls, an outline of threats and risks and how they are being addressed. YIP submissions missing the "Security Considerations" section will be rejected. An YIP cannot proceed to status "Final" without a Security Considerations discussion deemed sufficient by the reviewers.-->
 To-do.
+
+- Pricing conversion between MUSD and USDC (assume it's 1:1 constant)
+- Liquidity issues due to mStable "no-slippage" design
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
