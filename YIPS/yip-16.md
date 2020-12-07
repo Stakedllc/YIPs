@@ -2,7 +2,7 @@
 yip: 16
 title: mStable Lending Opportunity
 author: Devan Purhar @dpurhar27, Sam Mitchell @samatstaked, Andrea Burzi <...>
-discussions-to: <to be assigned>
+discussions-to: https://raydao.trydiscourse.com/t/discussion-for-the-mstable-yip-16/18
 status: WIP
 created: 2020-12-07
 ---
