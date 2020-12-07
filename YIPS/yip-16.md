@@ -1,5 +1,5 @@
 ---
-yip: <to be assigned>
+yip: 16
 title: mStable Lending Opportunity
 author: Devan Purhar @dpurhar27, Sam Mitchell @samatstaked, Andrea Burzi <...>
 discussions-to: <to be assigned>
