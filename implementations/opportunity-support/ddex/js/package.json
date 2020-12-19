@@ -1,0 +1,23 @@
+{
+  "name": "compound-opportunity-dependencies",
+  "version": "1.0.0",
+  "description": "Dependencies for Compound Opportunity",
+  "main": "index.js",
+  "repository": "",
+  "author": "RAY",
+  "scripts": {
+    "integration": "yarn run babel && node dist/index.js",
+    "babel": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./test,./.babelrc,./package.json --copy-files"
+  },
+  "dependencies": {
+    "bignumber.js": "4.1.0",
+    "dotenv": "^8.2.0",
+    "truffle": "5.0.2",
+    "truffle-contract": "4.0.1",
+    "web3": "1.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
