@@ -56,7 +56,12 @@ To-do.
 
 ## Implementation
 <!--The implementations must be completed before any YIP is given status "Final", but it need not be completed before the YIP is accepted. While there is merit to the approach of reaching consensus on the specification and rationale before writing code, the principle of "rough consensus and running code" is still useful when it comes to resolving many discussions of API details.-->
-To-do.
+
+This code assesses liquidation opportunities in $ and reports on them in real-time, but it doesn't have buy/sell/repay logic yet: https://gist.github.com/DunnCreativeSS/07d42c8031393e8e626325bc0f2af40e
+
+This code does have buy/sell/repay logic, take note of methods.repayBorrow: https://gist.github.com/DunnCreativeSS/ac0f2b1d7ce4f334c4cba805e26452bb
+
+A Solidity version of these pieces of code - including contract calls, where Compound is nice enough to supply sourcecode: https://etherscan.io/address/0x5d3a536e4d6dbd6114cc1ead35777bab948e3643#code and oraclized calls wouldn't be too tough to create and maintain. 
 
 ## Security Considerations
 <!--All YIPs must contain a section that discusses the security implications/considerations relevant to the proposed change. Include information that might be important for security discussions, surfaces risks and can be used throughout the life cycle of the proposal. E.g. include security-relevant design decisions, concerns, important discussions, implementation-specific guidance and pitfalls, an outline of threats and risks and how they are being addressed. YIP submissions missing the "Security Considerations" section will be rejected. An YIP cannot proceed to status "Final" without a Security Considerations discussion deemed sufficient by the reviewers.-->
